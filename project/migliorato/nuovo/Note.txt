@@ -1,0 +1,1 @@
+griglia tridimensionale con movimenti fluidi e dinamici:
