@@ -1,3 +1,19 @@
+document.addEventListener('DOMContentLoaded', function() {
+    const hamburgerMenu = document.querySelector('.hamburger-menu');
+    const overlay = document.querySelector('.overlay');
+
+    hamburgerMenu.addEventListener('click', function() {
+        overlay.classList.toggle('open');
+    });
+
+    overlay.addEventListener('click', function(e) {
+        if (e.target === overlay) {
+            overlay.classList.remove('open');
+        }
+    });
+});
+
+
 // Scene setup
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
