@@ -257,8 +257,8 @@ footer.visible {
 
 .hamburger-icon {
     width: 30px;
-    height: 20px;
-    background: transparent;
+    height: 3px;
+    background: #fff;
     position: relative;
     cursor: pointer;
 }
@@ -267,7 +267,7 @@ footer.visible {
 .hamburger-icon:after {
     content: '';
     display: block;
-    width: 100%;
+    width: 30px;
     height: 3px;
     background: #fff;
     position: absolute;
@@ -276,13 +276,14 @@ footer.visible {
 }
 
 .hamburger-icon:before {
-    top: 0;
+    top: -10px;
 }
 
 .hamburger-icon:after {
-    bottom: 0;
+    top: 10px;
 }
 
+/* Stile dell'overlay del menu */
 /* Stile dell'overlay del menu */
 .overlay {
     position: fixed;
@@ -295,6 +296,7 @@ footer.visible {
     display: none;
     align-items: center;
     justify-content: center;
+    flex-direction: column; /* Dispone gli elementi in colonna */
 }
 
 .overlay.open {
@@ -308,6 +310,7 @@ footer.visible {
 .overlay ul {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 .overlay ul li {
@@ -338,18 +341,48 @@ footer.visible {
     .hamburger-menu {
         display: block; /* Mostra il menu hamburger */
     }
-    h1 {
-        font-size: 2em;
+    .hamburger-icon {
+        width: 30px;
+        height: 3px;
+        background: #fff;
+        position: relative;
+        cursor: pointer;
     }
-    p {
-        font-size: 1em;
+    
+    .hamburger-icon:before,
+    .hamburger-icon:after {
+        content: '';
+        display: block;
+        width: 30px;
+        height: 3px;
+        background: #fff;
+        position: absolute;
+        left: 0;
+        transition: transform 0.3s ease;
     }
-    .contact-info {
+    
+    .hamburger-icon:before {
+        top: -10px;
+    }
+    
+    .hamburger-icon:after {
+        top: 10px;
+    }
+    
+    .overlay nav ul {
+        display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
     }
-    .info-column {
-        max-width: none;
-        padding: 10px 0;
+    
+    .overlay nav ul li {
+        margin-bottom: 10px;
+    }
+    
+    .overlay nav ul li a {
+        font-size: 1.5em;
     }
 }
+
+

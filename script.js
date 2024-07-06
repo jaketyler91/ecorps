@@ -1,16 +1,11 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const hamburgerMenu = document.querySelector('.hamburger-menu');
-    const overlay = document.querySelector('.overlay');
+// Seleziona l'elemento del menu hamburger
+const hamburgerMenu = document.querySelector('.hamburger-menu');
+const overlay = document.querySelector('.overlay');
 
-    hamburgerMenu.addEventListener('click', function() {
-        overlay.classList.toggle('open');
-    });
-
-    overlay.addEventListener('click', function(e) {
-        if (e.target === overlay) {
-            overlay.classList.remove('open');
-        }
-    });
+// Aggiungi un listener di eventi per il clic sul menu hamburger
+hamburgerMenu.addEventListener('click', () => {
+    // Alterna la classe 'open' per mostrare o nascondere l'overlay del menu
+    overlay.classList.toggle('open');
 });
 
 
