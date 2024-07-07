@@ -37,6 +37,10 @@ header {
     padding: 20px 0;
     background: rgba(0, 0, 0, 0.0);
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif; /* Utilizza lo stesso font della griglia */
+    text-align: center; /* Centra il contenuto */
+    font-size: 1.0em; /* Dimensione del testo per l'header */
+    color: #fff; /* Colore bianco per il testo dell'header */
 }
 
 .header-container {
@@ -347,5 +351,58 @@ footer.visible {
 
     footer {
         padding: 60px 0; /* Modifica del padding del footer per dispositivi mobili */
+    }
+
+}
+/* Aggiungi questo stile alla fine del tuo file style.css */
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.service {
+    background: rgba(51, 51, 51, 0.9); /* Grigio scuro con opacità */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.service h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #fff; /* Testo bianco */
+}
+
+.service p {
+    color: #ccc; /* Testo grigio chiaro per contrasto */
+    font-size: 0.9em; /* Dimensione del font un po' più piccola */
+    line-height: 1.6; /* Altezza della riga aumentata per migliorare la leggibilità */
+}
+
+.service:hover {
+    background: #0077ff; /* Cambia il colore di sfondo quando in hover */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Cambia l'ombra per un effetto più evidente */
+    transform: translateY(-5px); /* Solleva leggermente il box */
+}
+
+/* Effetto di transizione per i servizi */
+.service {
+    opacity: 0;
+    transition: opacity 0.6s ease;
+}
+
+.service.visible {
+    opacity: 1;
+}
+
+/* Media query per dispositivi mobili */
+@media screen and (max-width: 768px) {
+    .services {
+        grid-template-columns: 1fr;
     }
 }
