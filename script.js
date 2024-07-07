@@ -1,20 +1,18 @@
 // Seleziona l'elemento del menu hamburger
 const hamburgerMenu = document.querySelector('.hamburger-menu');
 const overlay = document.querySelector('.overlay');
-const closeButton = document.querySelector('.close-button')
-//const closeButton = overlay.querySelector('.close-button');
+const closeButton = document.querySelector('.close-button');
 
 // Aggiungi un listener di eventi per il clic sul menu hamburger
 hamburgerMenu.addEventListener('click', () => {
-    // Alterna la classe 'open' per mostrare o nascondere l'overlay del menu
-    overlay.classList.toggle('open');
+    // Alterna la classe 'active' per mostrare o nascondere l'overlay del menu
+    overlay.classList.toggle('active');
 });
 
 // Aggiungi un listener di eventi per il clic sul pulsante di chiusura
 closeButton.addEventListener('click', () => {
-    overlay.classList.remove('open');
+    overlay.classList.remove('active');
 });
-
 
 // Scene setup
 const scene = new THREE.Scene();
@@ -22,7 +20,6 @@ const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerH
 const renderer = new THREE.WebGLRenderer({ alpha: true });
 renderer.setSize(window.innerWidth, window.innerHeight);
 document.getElementById('background-animation').appendChild(renderer.domElement);
-
 
 // Creazione della griglia tridimensionale
 const gridSize = 20;
