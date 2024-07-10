@@ -14,12 +14,12 @@
             <div class="header-container">
                 <a href="index.html">
                     <div class="logo">
-                        <img src="logopng.png" alt="E-Corps Logo">
+                        <img src="C:\Users\OSCP\Desktop\logopng.png" alt="E-Corps Logo">
                     </div>
                 </a>
                 <nav>
                     <ul>
-                        <li><a href="#">Azienda</a></li>
+                        <li><a href="about.html">Azienda</a></li>
                         <li><a href="services.html">Servizi</a></li>
                         <li><a href="contact.html" class="active">Contatti</a></li>
                     </ul>
@@ -33,21 +33,30 @@
             <div class="contact-section">
                 <div class="contact-form contact-form-wide" id="contact-form">
                     <h2>Contattaci</h2>
-                    <form action="#">
+                    <form id="contactForm" action="https://formspree.io/f/xzzpbnvj" method="POST">
+                    
+                        <input type="hidden" name="_redirect" value="contact.html"> <!-- URL di reindirizzamento verso la stessa pagina -->
+                        
                         <div class="form-group">
                             <input type="text" name="nome" placeholder="Nome" required>
                         </div>
                         <div class="form-group">
-                            <input type="text" name="cognome" placeholder="Cognome" required>
+                            <input type="text" name="surname" placeholder="Cognome" required>
                         </div>
                         <div class="form-group">
                             <input type="email" name="email" placeholder="Email" required>
                         </div>
+
                         <div class="form-group">
-                            <textarea name="messaggio" placeholder="Messaggio" rows="4" required></textarea>
+                            <textarea name="message" placeholder="Message" rows="4" required></textarea>
                         </div>
+                        
                         <button type="submit" class="btn">Invia</button>
-                    </form>
+                      </form>
+                      
+                      <div id="confirmation" style="display: none;">
+                        <p>Grazie per averci contattato! Il tuo messaggio è stato inviato con successo. Verrai presto ricontattato dal nostro team </p>
+                      </div>
                 </div>
             </div>
         </main>
@@ -72,7 +81,7 @@
         <nav>
             <ul>
                 <li><a href="about.html">Azienda</a></li>
-                <li><a href="services.html">Servizi</a></li>
+                <li><a href="service.html">Servizi</a></li>
                 <li><a href="contact.html" class="active">Contatti</a></li>
             </ul>
         </nav>
@@ -84,3 +93,29 @@
     <script src="contact.js"></script>
 </body>
 </html>
+<script>
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Previeni il comportamento predefinito del form
+        
+        // Esegui la chiamata a Formspree via AJAX
+        var xhr = new XMLHttpRequest();
+        xhr.open('POST', 'https://formspree.io/f/xzzpbnvj');
+        xhr.setRequestHeader('Accept', 'application/json');
+        
+        // Gestisci la risposta da Formspree
+        xhr.onload = function() {
+            if (xhr.status === 200) {
+                // Nascondi il form e mostra il messaggio di conferma
+                document.getElementById('contactForm').style.display = 'none';
+                document.getElementById('confirmation').style.display = 'block';
+            } else {
+                // Gestisci eventuali errori
+                console.error('Errore nell\'invio del form:', xhr.statusText);
+                // Mostra un messaggio di errore, se necessario
+            }
+        };
+        
+        // Invia i dati del form
+        xhr.send(new FormData(this));
+    });
+    </script>
