@@ -530,3 +530,30 @@ footer.visible {
         opacity: 0;
     }
 }
+/* Sovrascrive lo stile predefinito del banner di Cookiebot */
+#CybotCookiebotDialog {
+    background-color: rgba(0, 0, 0, 0.5) !important; /* Modifica il valore del colore e della trasparenza secondo le tue preferenze */
+}
+
+#CybotCookiebotDialogBodyUnderlay {
+    background-color: rgba(0, 0, 0, 0.5) !important; /* Modifica il valore del colore e della trasparenza secondo le tue preferenze */
+}
+
+/* Personalizza il testo e i pulsanti per assicurarti che siano visibili su uno sfondo trasparente */
+#CybotCookiebotDialogBodyContentWrapper {
+    color: #ffffff !important; /* Cambia il colore del testo per contrastare con lo sfondo trasparente */
+}
+
+#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll,
+#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll + label,
+#CybotCookiebotDialogBodyButtonDecline,
+#CybotCookiebotDialogBodyButtonDecline + label,
+#CybotCookiebotDialogBodyButtonAccept,
+#CybotCookiebotDialogBodyButtonAccept + label {
+    background-color: #4CAF50 !important; /* Cambia il colore di sfondo dei pulsanti */
+    color: #ffffff !important; /* Cambia il colore del testo dei pulsanti */
+    border: none !important;
+    padding: 10px 20px !important;
+    margin: 5px !important;
+    cursor: pointer !important;
+}
