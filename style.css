@@ -472,7 +472,7 @@ footer.visible {
 /* Stili per il prompt dei comandi *//* Stili per il prompt dei comandi */
 .command-prompt {
     background-color: rgba(0, 0, 0, 0.37);
-    color: #00ff00;
+    color: ##FFFFFF;	/*00ff00 Verde stile DOS*/
     padding: 20px;
     border-radius: 5px;
     width: 80%;
@@ -506,7 +506,7 @@ footer.visible {
 }
 
 .prompt-path {
-    color: #00ff00;
+    color: #FFFFFF; /*#00ff00 Verde stile DOS*/
     margin-right: 5px;
     flex-shrink: 0;
 }
