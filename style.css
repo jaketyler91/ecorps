@@ -530,16 +530,7 @@ footer.visible {
         opacity: 0;
     }
 }
-/* Sovrascrive lo stile predefinito del banner di Cookiebot */
-#CybotCookiebotDialog {
-    background-color: rgba(0, 0, 0, 0.5) !important; /* Modifica il valore del colore e della trasparenza secondo le tue preferenze */
-}
-
-#CybotCookiebotDialogBodyUnderlay {
-    background-color: rgba(0, 0, 0, 0.5) !important; /* Modifica il valore del colore e della trasparenza secondo le tue preferenze */
-}
-
-/* Personalizza il testo e i pulsanti per assicurarti che siano visibili su uno sfondo trasparente */
+/* Stili generali per il banner di Cookiebot */
 #CybotCookiebotDialogBodyContentWrapper {
     color: #ffffff !important; /* Cambia il colore del testo per contrastare con lo sfondo trasparente */
 }
@@ -557,3 +548,15 @@ footer.visible {
     margin: 5px !important;
     cursor: pointer !important;
 }
+
+/* Stili specifici per dispositivi desktop */
+@media (min-width: 768px) {
+    #CybotCookiebotDialog {
+        background-color: rgba(0, 0, 0, 0.5) !important; /* Sfondo trasparente per desktop */
+    }
+
+    #CybotCookiebotDialogBodyUnderlay {
+        background-color: rgba(0, 0, 0, 0.5) !important; /* Sfondo trasparente per desktop */
+    }
+}
+
