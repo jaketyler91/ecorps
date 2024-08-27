@@ -536,11 +536,21 @@ footer.visible {
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: #333; /* Sfondo scuro */
+    max-height: 150px; /* Imposta un'altezza massima */
+    background-color: #222; /* Sfondo scuro */
     color: #fff; /* Testo bianco */
     z-index: 10000;
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.5);
     border-radius: 0; /* Rimuove gli angoli arrotondati */
+    padding: 20px; /* Aggiunge padding interno per spazio */
+    overflow-y: auto; /* Aggiunge lo scroll se necessario */
+}
+
+/* Stile per il contenuto del banner */
+#CybotCookiebotDialogBodyContent {
+    max-height: 100px; /* Riduce l'altezza del contenuto per desktop */
+    overflow-y: auto; /* Scroll se necessario */
+    margin-bottom: 10px; /* Spazio inferiore per i pulsanti */
 }
 
 /* Personalizza il pulsante di accettazione */
@@ -552,6 +562,7 @@ footer.visible {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
+    margin-top: 10px; /* Spazio superiore per separare dal testo */
 }
 
 #CybotCookiebotDialogBodyButtonAccept:hover {
@@ -566,4 +577,9 @@ footer.visible {
 
 #CybotCookiebotDialogBodyContent a:hover {
     color: #005bb5; /* Colore link hover */
+}
+
+/* Nasconde l'opzione di declino se non necessario */
+#CybotCookiebotDialogBodyButtonDecline {
+    display: none; /* Nasconde il pulsante di declino */
 }
