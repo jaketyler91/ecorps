@@ -530,38 +530,23 @@ footer.visible {
         opacity: 0;
     }
 }
-.cookie-banner {
+/* Banner dei cookie - tema scuro */
+#CybotCookiebotDialog {
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
     background-color: #333; /* Sfondo scuro */
     color: #fff; /* Testo bianco */
-    padding: 15px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 1000;
+    z-index: 10000;
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 0; /* Rimuove gli angoli arrotondati */
 }
 
-.cookie-banner p {
-    margin: 0;
-    font-size: 1em;
-}
-
-.cookie-banner a {
-    color: #0077ff; /* Colore link */
-    text-decoration: underline;
-}
-
-.cookie-banner a:hover {
-    color: #005bb5; /* Colore link hover */
-}
-
-.cookie-btn {
+/* Personalizza il pulsante di accettazione */
+#CybotCookiebotDialogBodyButtonAccept {
     background-color: #0077ff; /* Colore pulsante */
-    color: #fff;
+    color: #fff; /* Testo bianco */
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
@@ -569,6 +554,16 @@ footer.visible {
     transition: background-color 0.3s;
 }
 
-.cookie-btn:hover {
+#CybotCookiebotDialogBodyButtonAccept:hover {
     background-color: #005bb5; /* Colore pulsante hover */
+}
+
+/* Personalizza il link di policy */
+#CybotCookiebotDialogBodyContent a {
+    color: #0077ff; /* Colore link */
+    text-decoration: underline;
+}
+
+#CybotCookiebotDialogBodyContent a:hover {
+    color: #005bb5; /* Colore link hover */
 }
