@@ -530,3 +530,45 @@ footer.visible {
         opacity: 0;
     }
 }
+.cookie-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333; /* Sfondo scuro */
+    color: #fff; /* Testo bianco */
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.cookie-banner p {
+    margin: 0;
+    font-size: 1em;
+}
+
+.cookie-banner a {
+    color: #0077ff; /* Colore link */
+    text-decoration: underline;
+}
+
+.cookie-banner a:hover {
+    color: #005bb5; /* Colore link hover */
+}
+
+.cookie-btn {
+    background-color: #0077ff; /* Colore pulsante */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cookie-btn:hover {
+    background-color: #005bb5; /* Colore pulsante hover */
+}
