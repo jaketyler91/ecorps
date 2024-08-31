@@ -530,3 +530,16 @@ footer.visible {
         opacity: 0;
     }
 }
+#CybotCookiebotDialog {
+    background-color: #2c2c2c !important;
+}
+
+#CybotCookiebotDialogBody {
+    color: #ffffff !important;
+    font-family: Arial, sans-serif !important;
+}
+
+#CybotCookiebotDialog * {
+    color: #ffffff !important;
+}
+
