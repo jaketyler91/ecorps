@@ -54,35 +54,36 @@
     </div>
 
 
- <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            // Applicare un tema dark al banner Cookiebot
-            const dialog = document.querySelector('#CybotCookiebotDialog');
-            const dialogBody = document.querySelector('#CybotCookiebotDialogBody');
+<script>
+    window.addEventListener('load', function() {
+        // Applicare un tema dark al banner Cookiebot
+        const dialog = document.querySelector('#CybotCookiebotDialog');
+        const dialogBody = document.querySelector('#CybotCookiebotDialogBody');
 
-            if (dialog && dialogBody) {
-                dialog.style.backgroundColor = '#2c2c2c'; // Background scuro per l'intero dialogo
-                dialogBody.style.color = '#ffffff'; // Testo bianco
-                dialogBody.style.fontFamily = 'Arial, sans-serif'; // Font
-            }
+        if (dialog && dialogBody) {
+            dialog.style.backgroundColor = '#2c2c2c'; // Background scuro per l'intero dialogo
+            dialogBody.style.color = '#ffffff'; // Testo bianco
+            dialogBody.style.fontFamily = 'Arial, sans-serif'; // Font
+        }
 
-            document.querySelectorAll('#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll, #CybotCookiebotDialogBodyButtonDecline, #CybotCookiebotDialogBodyButtonAccept, #CybotCookiebotDialogBodyLevelButtonLevelOptinAllowallSelection').forEach(function(el) {
-                el.style.backgroundColor = '#0077ff';
-                el.style.color = '#fff';
-                el.style.padding = '10px 20px';
-                el.style.borderRadius = '5px';
-                el.style.fontSize = '1em';
-                el.style.margin = '5px';
-                el.style.border = 'none';
-                el.style.cursor = 'pointer';
-            });
-
-            // Applicare il colore bianco al testo di tutti gli elementi del banner
-            document.querySelectorAll('#CybotCookiebotDialog *').forEach(function(el) {
-                el.style.color = '#ffffff';
-            });
+        document.querySelectorAll('#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll, #CybotCookiebotDialogBodyButtonDecline, #CybotCookiebotDialogBodyButtonAccept, #CybotCookiebotDialogBodyLevelButtonLevelOptinAllowallSelection').forEach(function(el) {
+            el.style.backgroundColor = '#0077ff';
+            el.style.color = '#fff';
+            el.style.padding = '10px 20px';
+            el.style.borderRadius = '5px';
+            el.style.fontSize = '1em';
+            el.style.margin = '5px';
+            el.style.border = 'none';
+            el.style.cursor = 'pointer';
         });
-    </script>
+
+        // Applicare il colore bianco al testo di tutti gli elementi del banner
+        document.querySelectorAll('#CybotCookiebotDialog *').forEach(function(el) {
+            el.style.color = '#ffffff';
+        });
+    });
+</script>
+
 
     
     <script src="script.js"></script>
