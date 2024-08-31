@@ -530,18 +530,26 @@ footer.visible {
         opacity: 0;
     }
 }
+/* Stili generali per il banner di Cookiebot */
+#CybotCookiebotDialog * {
+    color: #ccc !important; /* Grigio chiaro per tutti gli elementi di testo */
+    font-family: Arial, sans-serif !important; /* Font coerente */
+}
+
+/* Uniformare lo stile dei pulsanti */
 #CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll,
 #CybotCookiebotDialogBodyButtonDecline,
 #CybotCookiebotDialogBodyButtonAccept,
+#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowallSelection,
 #CybotCookiebotDialogBodyLevelButtonLevelOptinAllowallSelection {
-    background-color: #0077ff !important; /* Colore di sfondo blu */
-    color: #fff !important; /* Colore del testo bianco */
-    padding: 10px 20px !important; /* Stesso padding per tutti i pulsanti */
+    background-color: #0077ff !important; /* Sfondo blu per tutti i pulsanti */
+    color: #fff !important; /* Testo bianco */
+    padding: 10px 20px !important; /* Stesso padding per tutti */
     border-radius: 5px !important; /* Bordo arrotondato */
-    font-size: 1em !important; /* Dimensione del testo uniforme */
-    margin: 5px !important; /* Margine uniforme tra i pulsanti */
-    border: none !important; /* Rimuovi eventuali bordi */
-    cursor: pointer !important; /* Puntatore del mouse a mano */
+    font-size: 1em !important; /* Dimensione del testo */
+    margin: 5px !important; /* Margine uniforme */
+    border: none !important; /* Nessun bordo */
+    cursor: pointer !important; /* Puntatore mano */
 }
 
 /* Effetto hover coerente per tutti i pulsanti */
@@ -549,6 +557,5 @@ footer.visible {
 #CybotCookiebotDialogBodyButtonDecline:hover,
 #CybotCookiebotDialogBodyButtonAccept:hover,
 #CybotCookiebotDialogBodyLevelButtonLevelOptinAllowallSelection:hover {
-    background-color: #005bb5 !important; /* Colore blu più scuro al passaggio del mouse */
+    background-color: #005bb5 !important; /* Blu più scuro all'hover */
 }
-
