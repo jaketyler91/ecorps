@@ -532,31 +532,37 @@ footer.visible {
 }
 /* Stili generali per il banner di Cookiebot */
 #CybotCookiebotDialogBodyContentWrapper {
-    color: #ffffff !important; /* Cambia il colore del testo per contrastare con lo sfondo trasparente */
+    color: #ffffff !important; /* Testo bianco */
 }
 
 #CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll,
-#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll + label,
 #CybotCookiebotDialogBodyButtonDecline,
-#CybotCookiebotDialogBodyButtonDecline + label,
-#CybotCookiebotDialogBodyButtonAccept,
-#CybotCookiebotDialogBodyButtonAccept + label {
-    background-color: #4CAF50 !important; /* Cambia il colore di sfondo dei pulsanti */
-    color: #ffffff !important; /* Cambia il colore del testo dei pulsanti */
+#CybotCookiebotDialogBodyButtonAccept {
+    background-color: #0077ff !important; /* Colore blu chiaro per i pulsanti */
+    color: #ffffff !important; /* Testo bianco per i pulsanti */
     border: none !important;
     padding: 10px 20px !important;
     margin: 5px !important;
     cursor: pointer !important;
+    border-radius: 5px !important; /* Bordo arrotondato coerente con altri pulsanti */
+    transition: background-color 0.3s ease !important; /* Transizione per hover */
 }
 
-/* Stili specifici per dispositivi desktop */
+/* Effetto hover sui pulsanti */
+#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll:hover,
+#CybotCookiebotDialogBodyButtonDecline:hover,
+#CybotCookiebotDialogBodyButtonAccept:hover {
+    background-color: #005bb5 !important; /* Colore blu più scuro al passaggio del mouse */
+}
+
+/* Sfondo trasparente per il banner su desktop */
 @media (min-width: 768px) {
     #CybotCookiebotDialog {
-        background-color: rgba(0, 0, 0, 0.5) !important; /* Sfondo trasparente per desktop */
+        background-color: rgba(0, 0, 0, 0.7) !important; /* Sfondo leggermente trasparente per desktop */
     }
 
     #CybotCookiebotDialogBodyUnderlay {
-        background-color: rgba(0, 0, 0, 0.5) !important; /* Sfondo trasparente per desktop */
+        background-color: rgba(0, 0, 0, 0.7) !important; /* Sfondo leggermente trasparente per desktop */
     }
 }
 
