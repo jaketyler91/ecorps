@@ -530,28 +530,25 @@ footer.visible {
         opacity: 0;
     }
 }
-/* Stili generali per il banner di Cookiebot */
-
 #CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll,
-#CybotCookiebotDialogBodyButtonAccept,
 #CybotCookiebotDialogBodyButtonDecline,
-
-
-/* Effetto hover sui pulsanti */
-#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll:hover,
-#CybotCookiebotDialogBodyButtonDecline:hover,
-#CybotCookiebotDialogBodyButtonAccept:hover {
-   
+#CybotCookiebotDialogBodyButtonAccept,
+#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowallSelection {
+    background-color: #0077ff !important; /* Colore di sfondo blu */
+    color: #fff !important; /* Colore del testo bianco */
+    padding: 10px 20px !important; /* Stesso padding per tutti i pulsanti */
+    border-radius: 5px !important; /* Bordo arrotondato */
+    font-size: 1em !important; /* Dimensione del testo uniforme */
+    margin: 5px !important; /* Margine uniforme tra i pulsanti */
+    border: none !important; /* Rimuovi eventuali bordi */
+    cursor: pointer !important; /* Puntatore del mouse a mano */
 }
 
-/* Sfondo trasparente per il banner su desktop */
-@media (min-width: 768px) {
-    #CybotCookiebotDialog {
-        background-color: rgba(0, 0, 0, 0.7) !important; /* Sfondo leggermente trasparente per desktop */
-    }
-
-    #CybotCookiebotDialogBodyUnderlay {
-        background-color: rgba(0, 0, 0, 0.7) !important; /* Sfondo leggermente trasparente per desktop */
-    }
+/* Effetto hover coerente per tutti i pulsanti */
+#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll:hover,
+#CybotCookiebotDialogBodyButtonDecline:hover,
+#CybotCookiebotDialogBodyButtonAccept:hover,
+#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowallSelection:hover {
+    background-color: #005bb5 !important; /* Colore blu più scuro al passaggio del mouse */
 }
 
