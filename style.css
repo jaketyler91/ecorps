@@ -537,16 +537,7 @@ footer.visible {
 
 #CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll,
 #CybotCookiebotDialogBodyButtonDecline,
-#CybotCookiebotDialogBodyButtonAccept {
-    background-color: #0077ff !important; /* Colore blu chiaro per i pulsanti */
-    color: #ffffff !important; /* Testo bianco per i pulsanti */
-    border: none !important;
-    padding: 10px 20px !important;
-    margin: 5px !important;
-    cursor: pointer !important;
-    border-radius: 5px !important; /* Bordo arrotondato coerente con altri pulsanti */
-    transition: background-color 0.3s ease !important; /* Transizione per hover */
-}
+
 
 /* Effetto hover sui pulsanti */
 #CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll:hover,
