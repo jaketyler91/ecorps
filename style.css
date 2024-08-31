@@ -531,9 +531,6 @@ footer.visible {
     }
 }
 /* Stili generali per il banner di Cookiebot */
-#CybotCookiebotDialogBodyContentWrapper {
-    color: #ffffff !important; /* Testo bianco */
-}
 
 #CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll,
 #CybotCookiebotDialogBodyButtonDecline,
