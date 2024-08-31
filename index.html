@@ -54,62 +54,6 @@
     </div>
 
 
-<script>
-    function applyCookiebotStyles() {
-        const bannerInterval = setInterval(() => {
-            const cookieDialog = document.getElementById('CybotCookiebotDialog');
-            if (cookieDialog) {
-                clearInterval(bannerInterval);
-
-                // Modifica il colore di sfondo e del testo
-                cookieDialog.style.backgroundColor = '#1a1a1a'; // Colore di sfondo scuro
-                cookieDialog.style.color = '#ffffff'; // Colore del testo
-
-                // Modifica i pulsanti
-                const buttons = document.querySelectorAll(
-                    '#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll, ' +
-                    '#CybotCookiebotDialogBodyButtonDecline, ' +
-                    '#CybotCookiebotDialogBodyButtonAccept, ' +
-                    '#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowallSelection'
-                );
-
-                buttons.forEach(button => {
-                    button.style.backgroundColor = '#0077ff'; // Colore di sfondo dei pulsanti
-                    button.style.color = '#ffffff'; // Colore del testo dei pulsanti
-                    button.style.border = 'none'; // Rimuove il bordo
-                    button.style.padding = '10px 20px'; // Padding dei pulsanti
-                    button.style.borderRadius = '5px'; // Angoli arrotondati
-                    button.style.fontSize = '0.9em'; // Dimensione del font
-                    button.style.cursor = 'pointer'; // Mostra il cursore a mano
-                    button.style.margin = '5px'; // Margine tra i pulsanti
-                });
-
-                // Modifica il layout dei checkbox
-                const levelButtonsContainer = document.getElementById('CybotCookiebotDialogBodyLevelButtons');
-                if (levelButtonsContainer) {
-                    levelButtonsContainer.style.display = 'flex'; // Layout flessibile
-                    levelButtonsContainer.style.flexDirection = 'row'; // Disporre orizzontalmente
-                    levelButtonsContainer.style.justifyContent = 'space-around'; // Spazio uniforme tra gli elementi
-                    levelButtonsContainer.style.flexWrap = 'wrap'; // Avvolge gli elementi se necessario
-                }
-
-                // Assicurati che tutto il testo sia bianco
-                const allTextElements = cookieDialog.querySelectorAll('*');
-                allTextElements.forEach(el => {
-                    el.style.color = '#ffffff'; // Testo bianco
-                });
-            }
-        }, 100); // Controlla ogni 100ms
-    }
-
-    // Esegui la funzione quando il documento è pronto
-    document.addEventListener('DOMContentLoaded', applyCookiebotStyles);
-</script>
-
-
-
-
-
     
     <script src="script.js"></script>
     
