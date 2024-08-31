@@ -56,14 +56,14 @@
 
 <script>
     window.addEventListener('load', function() {
-        // Applicare un tema dark al banner Cookiebot
         const dialog = document.querySelector('#CybotCookiebotDialog');
         const dialogBody = document.querySelector('#CybotCookiebotDialogBody');
 
         if (dialog && dialogBody) {
-            dialog.style.backgroundColor = '#2c2c2c'; // Background scuro per l'intero dialogo
-            dialogBody.style.color = '#ffffff'; // Testo bianco
-            dialogBody.style.fontFamily = 'Arial, sans-serif'; // Font
+            // Imposta il background e il colore del testo
+            dialog.style.backgroundColor = '#2c2c2c';
+            dialogBody.style.color = '#ffffff';
+            dialogBody.style.fontFamily = 'Arial, sans-serif';
         }
 
         document.querySelectorAll('#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll, #CybotCookiebotDialogBodyButtonDecline, #CybotCookiebotDialogBodyButtonAccept, #CybotCookiebotDialogBodyLevelButtonLevelOptinAllowallSelection').forEach(function(el) {
@@ -77,12 +77,22 @@
             el.style.cursor = 'pointer';
         });
 
+        // Rendi orizzontali i checkbox
+        const checkboxContainer = document.querySelector('#CybotCookiebotDialogBodyLevelButtons');
+        if (checkboxContainer) {
+            checkboxContainer.style.display = 'flex';
+            checkboxContainer.style.flexDirection = 'row'; // Cambia la direzione a orizzontale
+            checkboxContainer.style.justifyContent = 'space-between'; // Distribuisci uniformemente gli elementi
+            checkboxContainer.style.flexWrap = 'wrap'; // Avvolgi gli elementi su più righe, se necessario
+        }
+
         // Applicare il colore bianco al testo di tutti gli elementi del banner
         document.querySelectorAll('#CybotCookiebotDialog *').forEach(function(el) {
             el.style.color = '#ffffff';
         });
     });
 </script>
+
 
 
     
