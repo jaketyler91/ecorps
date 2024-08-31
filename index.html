@@ -53,6 +53,29 @@
             </button>
     </div>
 
+
+     <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            document.querySelectorAll('#CybotCookiebotDialog *, #CybotCookiebotDialogBody *').forEach(function(el) {
+                el.style.color = '#000000';
+                el.style.fontFamily = 'Arial, sans-serif';
+            });
+
+            document.querySelectorAll('#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll, #CybotCookiebotDialogBodyButtonDecline, #CybotCookiebotDialogBodyButtonAccept, #CybotCookiebotDialogBodyLevelButtonLevelOptinAllowallSelection').forEach(function(el) {
+                el.style.backgroundColor = '#0077ff';
+                el.style.color = '#fff';
+                el.style.padding = '10px 20px';
+                el.style.borderRadius = '5px';
+                el.style.fontSize = '1em';
+                el.style.margin = '5px';
+                el.style.border = 'none';
+                el.style.cursor = 'pointer';
+            });
+        });
+    </script>
+
+
+    
     <script src="script.js"></script>
     
 </body>
