@@ -55,43 +55,59 @@
 
 
 <script>
-    window.addEventListener('load', function() {
-        const dialog = document.querySelector('#CybotCookiebotDialog');
-        const dialogBody = document.querySelector('#CybotCookiebotDialogBody');
+    // Funzione per applicare gli stili al banner di Cookiebot
+    function styleCookiebotBanner() {
+        // Attendere che Cookiebot sia completamente caricato
+        const interval = setInterval(() => {
+            const cookieDialog = document.getElementById('CybotCookiebotDialog');
+            if (cookieDialog) {
+                clearInterval(interval);
 
-        if (dialog && dialogBody) {
-            // Imposta il background e il colore del testo
-            dialog.style.backgroundColor = '#2c2c2c';
-            dialogBody.style.color = '#ffffff';
-            dialogBody.style.fontFamily = 'Arial, sans-serif';
-        }
+                // Applicare stili al banner
+                cookieDialog.style.backgroundColor = '#2c2c2c'; // Sfondo scuro
+                cookieDialog.style.color = '#ffffff'; // Testo bianco
 
-        document.querySelectorAll('#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll, #CybotCookiebotDialogBodyButtonDecline, #CybotCookiebotDialogBodyButtonAccept, #CybotCookiebotDialogBodyLevelButtonLevelOptinAllowallSelection').forEach(function(el) {
-            el.style.backgroundColor = '#0077ff';
-            el.style.color = '#fff';
-            el.style.padding = '10px 20px';
-            el.style.borderRadius = '5px';
-            el.style.fontSize = '1em';
-            el.style.margin = '5px';
-            el.style.border = 'none';
-            el.style.cursor = 'pointer';
-        });
+                // Modificare i pulsanti
+                const buttons = document.querySelectorAll(
+                    '#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll, ' +
+                    '#CybotCookiebotDialogBodyButtonDecline, ' +
+                    '#CybotCookiebotDialogBodyButtonAccept, ' +
+                    '#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowallSelection'
+                );
 
-        // Rendi orizzontali i checkbox
-        const checkboxContainer = document.querySelector('#CybotCookiebotDialogBodyLevelButtons');
-        if (checkboxContainer) {
-            checkboxContainer.style.display = 'flex';
-            checkboxContainer.style.flexDirection = 'row'; // Cambia la direzione a orizzontale
-            checkboxContainer.style.justifyContent = 'space-between'; // Distribuisci uniformemente gli elementi
-            checkboxContainer.style.flexWrap = 'wrap'; // Avvolgi gli elementi su più righe, se necessario
-        }
+                buttons.forEach(button => {
+                    button.style.backgroundColor = '#0077ff'; // Colore di sfondo per i pulsanti
+                    button.style.color = '#ffffff'; // Colore del testo
+                    button.style.border = 'none'; // Rimuove il bordo
+                    button.style.padding = '10px 20px'; // Spazio interno ai pulsanti
+                    button.style.borderRadius = '5px'; // Angoli arrotondati
+                    button.style.fontSize = '1em'; // Dimensione del font
+                    button.style.cursor = 'pointer'; // Mostra il cursore a mano
+                    button.style.margin = '5px'; // Margine per separare i pulsanti
+                });
 
-        // Applicare il colore bianco al testo di tutti gli elementi del banner
-        document.querySelectorAll('#CybotCookiebotDialog *').forEach(function(el) {
-            el.style.color = '#ffffff';
-        });
-    });
+                // Modificare i checkbox
+                const levelButtons = document.getElementById('CybotCookiebotDialogBodyLevelButtons');
+                if (levelButtons) {
+                    levelButtons.style.display = 'flex'; // Layout flessibile
+                    levelButtons.style.flexDirection = 'row'; // Disporre orizzontalmente
+                    levelButtons.style.justifyContent = 'space-between'; // Spazio uniforme tra gli elementi
+                    levelButtons.style.flexWrap = 'wrap'; // Avvolge gli elementi se necessario
+                }
+
+                // Assicurati che tutto il testo sia bianco
+                const textElements = cookieDialog.querySelectorAll('*');
+                textElements.forEach(el => {
+                    el.style.color = '#ffffff';
+                });
+            }
+        }, 100);
+    }
+
+    // Esegui la funzione quando il documento è pronto
+    document.addEventListener('DOMContentLoaded', styleCookiebotBanner);
 </script>
+
 
 
 
