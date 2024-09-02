@@ -537,8 +537,8 @@ footer.visible {
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: #333333; /* Colore di sfondo scuro */
-    color: #ffffff; /* Colore del testo */
+    background-color: #333; /* Colore di sfondo scuro */
+    color: #fff; /* Colore del testo */
     padding: 10px;
     border-radius: 8px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
@@ -568,8 +568,8 @@ footer.visible {
 #CybotCookiebotDialogBodyLevelButtonLevelOptinPreferences,
 #CybotCookiebotDialogBodyLevelButtonLevelOptinStatistics,
 #CybotCookiebotDialogBodyLevelButtonLevelOptinMarketing {
-    background-color: #555555;
-    color: #ffffff;
+    background-color: #555;
+    color: #fff;
     border: none;
     padding: 5px 10px;
     border-radius: 5px;
@@ -583,7 +583,7 @@ footer.visible {
 #CybotCookiebotDialogBodyButtonDecline,
 #CybotCookiebotDialogBodyButtonAccept {
     background-color: #0077ff;
-    color: #ffffff;
+    color: #fff;
     border: none;
     padding: 6px 12px;
     border-radius: 5px;
@@ -599,4 +599,3 @@ footer.visible {
     gap: 10px;
     margin-top: 10px;
 }
-
