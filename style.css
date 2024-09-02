@@ -531,71 +531,75 @@ footer.visible {
     }
 }
 
-/* Stile per il banner dei cookie */
+/* Stile generale del banner */
 #CybotCookiebotDialog {
-    position: fixed;
+    background-color: #333;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 10px;
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: #333; /* Colore di sfondo scuro */
-    color: #fff; /* Colore del testo */
-    padding: 10px;
-    border-radius: 8px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-    font-size: 12px; /* Dimensione del testo ridotta */
-    max-width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    position: fixed;
+    z-index: 9999;
 }
 
-/* Testo del banner */
+/* Contenuto del banner */
 #CybotCookiebotDialogBodyContentWrapper {
-    margin-bottom: 10px;
     text-align: center;
+    margin-bottom: 10px;
 }
 
-/* Disposizione orizzontale dei pulsanti */
+/* Pulsanti di livello */
 #CybotCookiebotDialogBodyLevelButtons {
     display: flex;
     justify-content: center;
-    gap: 10px; /* Spazio tra i pulsanti */
-    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
-/* Pulsanti */
-#CybotCookiebotDialogBodyLevelButtonLevelOptinNecessary,
-#CybotCookiebotDialogBodyLevelButtonLevelOptinPreferences,
-#CybotCookiebotDialogBodyLevelButtonLevelOptinStatistics,
-#CybotCookiebotDialogBodyLevelButtonLevelOptinMarketing {
-    background-color: #555;
-    color: #fff;
-    border: none;
-    padding: 5px 10px;
-    border-radius: 5px;
-    font-size: 0.8em;
-    cursor: pointer;
-    flex: 1;
-    text-align: center;
-}
-
-/* Pulsanti di accettazione e rifiuto */
+#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll,
 #CybotCookiebotDialogBodyButtonDecline,
-#CybotCookiebotDialogBodyButtonAccept {
+#CybotCookiebotDialogBodyButtonAccept,
+#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowallSelection {
     background-color: #0077ff;
     color: #fff;
     border: none;
-    padding: 6px 12px;
+    padding: 8px 12px;
+    margin: 0 4px;
     border-radius: 5px;
-    font-size: 0.85em;
     cursor: pointer;
-    margin-top: 10px;
+    font-size: 12px;
+    transition: background-color 0.3s;
 }
 
-/* Wrapper per i pulsanti di accettazione e rifiuto */
-#CybotCookiebotDialogBodyButtonWrapper {
+#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll:hover,
+#CybotCookiebotDialogBodyButtonDecline:hover,
+#CybotCookiebotDialogBodyButtonAccept:hover,
+#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowallSelection:hover {
+    background-color: #005bb5;
+}
+
+/* Pulsanti di azione */
+#CybotCookiebotDialogBodyButtonDecline,
+#CybotCookiebotDialogBodyButtonAccept {
+    background-color: #ff4d4d;
+}
+
+#CybotCookiebotDialogBodyButtonDecline:hover,
+#CybotCookiebotDialogBodyButtonAccept:hover {
+    background-color: #cc0000;
+}
+
+/* Layout dei pulsanti */
+#CybotCookiebotDialogBodyLevelButtons {
     display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 10px;
+    justify-content: space-around;
+}
+
+#CybotCookiebotDialogBodyLevelButtons button {
+    margin: 0 5px;
 }
