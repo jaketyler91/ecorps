@@ -531,52 +531,68 @@ footer.visible {
     }
 }
 
-/* Stile del banner per renderlo più compatto */
+/* Banner compatto */
 #CybotCookiebotDialog {
-    max-width: 300px; /* Riduce la larghezza del banner */
+    max-width: 400px; /* Riduce la larghezza del banner */
     margin: 0 auto; /* Centra il banner */
-    padding: 5px; /* Riduce il padding interno */
+    padding: 10px; /* Riduce il padding interno */
     border-radius: 8px; /* Arrotonda gli angoli */
-    background-color: #333333; /* Sfondo scuro per meno invasività */
+    background-color: #333333; /* Sfondo scuro */
     color: #ffffff; /* Testo bianco */
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Aggiunge ombra per profondità */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Ombra */
 }
 
-/* Testo del banner compatto */
+/* Testo compatto */
 #CybotCookiebotDialogBodyContentWrapper {
     font-size: 12px; /* Testo più piccolo */
-    line-height: 1.4; /* Distanza tra le righe ridotta */
+    line-height: 1.4; /* Riduce la distanza tra le righe */
     margin-bottom: 5px; /* Spazio ridotto sotto il testo */
     text-align: center; /* Centra il testo */
 }
 
-/* Disposizione dei pulsanti più compatta */
+/* Disposizione orizzontale per i pulsanti */
 #CybotCookiebotDialogBodyLevelButtons {
     display: flex;
-    flex-wrap: wrap; /* Pulsanti disposti su più righe se necessario */
-    justify-content: center; /* Centra i pulsanti */
-    gap: 5px; /* Riduce la distanza tra i pulsanti */
+    justify-content: space-between; /* Spazio uniforme tra i pulsanti */
+    margin-top: 10px; /* Aggiungi spazio sopra i pulsanti */
 }
 
-#CybotCookiebotDialogBodyButtonWrapper {
-    margin-bottom: 0; /* Elimina il margine inferiore */
-}
-
-/* Stile compatto per i pulsanti */
-#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll,
-#CybotCookiebotDialogBodyButtonDecline,
-#CybotCookiebotDialogBodyButtonAccept,
-#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowallSelection {
-    background-color: #0077ff; /* Colore pulsanti */
+/* Stile dei pulsanti "Necessary", "Preferences", ecc. */
+#CybotCookiebotDialogBodyLevelButtonLevelOptinNecessary,
+#CybotCookiebotDialogBodyLevelButtonLevelOptinPreferences,
+#CybotCookiebotDialogBodyLevelButtonLevelOptinStatistics,
+#CybotCookiebotDialogBodyLevelButtonLevelOptinMarketing {
+    flex: 1; /* Ogni pulsante occupa lo stesso spazio */
+    text-align: center; /* Centra il testo */
+    background-color: #555555; /* Colore del pulsante */
     color: #ffffff; /* Colore del testo */
-    border: none; /* Rimuove bordi */
-    padding: 6px 10px; /* Riduce il padding per pulsanti più compatti */
-    border-radius: 5px; /* Arrotonda gli angoli dei pulsanti */
-    font-size: 0.85em; /* Testo più piccolo nei pulsanti */
-    cursor: pointer; /* Cursore a mano */
-    flex: 1; /* Pulsanti occupano lo stesso spazio */
-    text-align: center; /* Centra il testo nei pulsanti */
-    min-width: 100px; /* Larghezza minima per i pulsanti */
+    border: none; /* Rimuove i bordi */
+    padding: 5px; /* Riduce il padding */
+    margin: 0 2px; /* Piccolo margine tra i pulsanti */
+    border-radius: 5px; /* Arrotonda gli angoli */
+    font-size: 0.8em; /* Riduce la dimensione del testo */
+    cursor: pointer; /* Cambia il cursore quando si passa sopra */
 }
 
+/* Pulsanti generali */
+#CybotCookiebotDialogBodyButtonDecline,
+#CybotCookiebotDialogBodyButtonAccept {
+    background-color: #0077ff; /* Colore dei pulsanti principali */
+    color: #ffffff; /* Colore del testo */
+    border: none; /* Rimuove i bordi */
+    padding: 6px 10px; /* Riduce il padding */
+    border-radius: 5px; /* Arrotonda gli angoli */
+    font-size: 0.85em; /* Testo più piccolo */
+    cursor: pointer; /* Cambia il cursore quando si passa sopra */
+    margin-top: 10px; /* Spazio sopra i pulsanti */
+    width: 100%; /* Occupa tutta la larghezza disponibile */
+}
+
+/* Modifica il wrapper del bottone per adattarlo meglio al layout */
+#CybotCookiebotDialogBodyButtonWrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    gap: 10px; /* Spazio tra i pulsanti */
+}
 
