@@ -56,35 +56,42 @@
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-    const levelButtons = document.getElementById('CybotCookiebotDialogBodyLevelButtons');
-    if (levelButtons) {
-        levelButtons.style.display = 'flex';
-        levelButtons.style.justifyContent = 'center';
-        levelButtons.style.gap = '10px';
-        levelButtons.style.marginTop = '10px';
-    }
-
-    const buttonIds = [
-        'CybotCookiebotDialogBodyLevelButtonLevelOptinNecessary',
-        'CybotCookiebotDialogBodyLevelButtonLevelOptinPreferences',
-        'CybotCookiebotDialogBodyLevelButtonLevelOptinStatistics',
-        'CybotCookiebotDialogBodyLevelButtonLevelOptinMarketing'
-    ];
-
-    buttonIds.forEach(id => {
-        const button = document.getElementById(id);
-        if (button) {
-            button.style.backgroundColor = '#555';
-            button.style.color = '#fff';
-            button.style.border = 'none';
-            button.style.padding = '5px 10px';
-            button.style.borderRadius = '5px';
-            button.style.fontSize = '0.8em';
-            button.style.cursor = 'pointer';
-            button.style.flex = '1';
-            button.style.textAlign = 'center';
+    const banner = document.getElementById('CybotCookiebotDialog');
+    if (banner) {
+        // Stili personalizzati per il banner
+        banner.style.backgroundColor = '#333';
+        banner.style.color = '#fff';
+        banner.style.fontSize = '14px';
+        banner.style.borderRadius = '8px';
+        banner.style.boxShadow = '0px 0px 10px rgba(0, 0, 0, 0.5)';
+        
+        const buttonsContainer = document.getElementById('CybotCookiebotDialogBodyLevelButtons');
+        if (buttonsContainer) {
+            buttonsContainer.style.display = 'flex';
+            buttonsContainer.style.justifyContent = 'space-around';
         }
-    });
+        
+        const buttons = [
+            'CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll',
+            'CybotCookiebotDialogBodyButtonDecline',
+            'CybotCookiebotDialogBodyButtonAccept',
+            'CybotCookiebotDialogBodyLevelButtonLevelOptinAllowallSelection'
+        ];
+
+        buttons.forEach(id => {
+            const button = document.getElementById(id);
+            if (button) {
+                button.style.backgroundColor = '#0077ff';
+                button.style.color = '#fff';
+                button.style.border = 'none';
+                button.style.padding = '8px 12px';
+                button.style.borderRadius = '5px';
+                button.style.fontSize = '12px';
+                button.style.cursor = 'pointer';
+                button.style.margin = '0 4px';
+            }
+        });
+    }
 });
 
 
