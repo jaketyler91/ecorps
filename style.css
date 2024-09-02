@@ -530,3 +530,34 @@ footer.visible {
         opacity: 0;
     }
 }
+
+/* Forza la modifica degli stili per il banner Cookiebot */
+#CybotCookiebotDialog {
+    background-color: #1a1a1a !important; /* Sfondo scuro */
+    color: #ffffff !important; /* Testo bianco */
+}
+
+#CybotCookiebotDialogBodyLevelButtons {
+    display: flex !important; /* Disporre i pulsanti orizzontalmente */
+    flex-direction: row !important; /* Disporre orizzontalmente */
+    justify-content: space-around !important; /* Spazio uniforme tra i pulsanti */
+    flex-wrap: wrap !important; /* Avvolge i pulsanti se necessario */
+    margin: 10px 0 !important; /* Margine superiore e inferiore per distanziare i pulsanti dal testo */
+}
+
+#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll,
+#CybotCookiebotDialogBodyButtonDecline,
+#CybotCookiebotDialogBodyButtonAccept,
+#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowallSelection {
+    background-color: #0077ff !important; /* Sfondo blu per i pulsanti */
+    color: #ffffff !important; /* Testo bianco */
+    border: none !important; /* Rimuove il bordo */
+    padding: 10px 20px !important; /* Padding dei pulsanti */
+    border-radius: 5px !important; /* Angoli arrotondati */
+    font-size: 0.9em !important; /* Dimensione del font */
+    cursor: pointer !important; /* Mostra il cursore a mano */
+    margin: 5px !important; /* Margine tra i pulsanti */
+    display: inline-block !important; /* Mostra i pulsanti come blocchi inline */
+}
+
+
