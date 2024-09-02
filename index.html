@@ -58,15 +58,20 @@
 document.addEventListener('DOMContentLoaded', function() {
     const banner = document.getElementById('CybotCookiebotDialog');
     if (banner) {
-        banner.style.backgroundColor = '#1a1a1a'; // Sfondo scuro
-        banner.style.color = '#ffffff'; // Testo bianco
-
+        banner.style.maxWidth = '300px';
+        banner.style.margin = '0 auto';
+        banner.style.padding = '5px';
+        banner.style.borderRadius = '8px';
+        banner.style.backgroundColor = '#333333';
+        banner.style.color = '#ffffff';
+        banner.style.boxShadow = '0px 0px 10px rgba(0, 0, 0, 0.5)';
+        
         const buttonsContainer = document.getElementById('CybotCookiebotDialogBodyLevelButtons');
         if (buttonsContainer) {
             buttonsContainer.style.display = 'flex';
-            buttonsContainer.style.flexDirection = 'column'; // Disporre i pulsanti in colonna
-            buttonsContainer.style.alignItems = 'center'; // Centra i pulsanti
-            buttonsContainer.style.margin = '10px 0'; // Margine per distanziare i pulsanti dal testo
+            buttonsContainer.style.flexWrap = 'wrap';
+            buttonsContainer.style.justifyContent = 'center';
+            buttonsContainer.style.gap = '5px';
         }
 
         const buttons = [
@@ -79,20 +84,21 @@ document.addEventListener('DOMContentLoaded', function() {
         buttons.forEach(id => {
             const button = document.getElementById(id);
             if (button) {
-                button.style.backgroundColor = '#0077ff'; // Sfondo blu
-                button.style.color = '#ffffff'; // Testo bianco
-                button.style.border = 'none'; // Rimuove il bordo
-                button.style.padding = '8px 12px'; // Padding compatto
-                button.style.borderRadius = '5px'; // Angoli arrotondati
-                button.style.fontSize = '0.9em'; // Dimensione del font
-                button.style.cursor = 'pointer'; // Cursore a mano
-                button.style.margin = '3px 0'; // Margine ridotto tra i pulsanti
-                button.style.width = '100%'; // Pulsanti occupano tutta la larghezza disponibile
-                button.style.textAlign = 'center'; // Centra il testo nei pulsanti
+                button.style.backgroundColor = '#0077ff';
+                button.style.color = '#ffffff';
+                button.style.border = 'none';
+                button.style.padding = '6px 10px';
+                button.style.borderRadius = '5px';
+                button.style.fontSize = '0.85em';
+                button.style.cursor = 'pointer';
+                button.style.flex = '1';
+                button.style.textAlign = 'center';
+                button.style.minWidth = '100px';
             }
         });
     }
 });
+
  
 </script>
 
