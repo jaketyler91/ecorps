@@ -531,78 +531,40 @@ footer.visible {
     }
 }
 
-/* Stile per ridimensionare il banner CookieBot */
+/* Ridimensiona il contenitore principale del banner */
 #CybotCookiebotDialog {
-    max-width: 800px; /* Imposta una larghezza massima per il banner */
-    margin: 0 auto; /* Centra il banner orizzontalmente */
-    padding: 20px; /* Padding interno per una migliore spaziatura */
-    box-sizing: border-box;
-    border-radius: 10px; /* Angoli arrotondati per un aspetto più elegante */
+    max-width: 400px; /* Cambia la larghezza massima in base alle tue esigenze */
+    margin: 0 auto;   /* Centra il banner */
+    padding: 20px;    /* Aggiungi un po' di padding per spaziatura interna */
 }
 
-/* Stile per disporre i checkbox orizzontalmente */
-#CybotCookiebotDialogDetailBodyContentText {
+/* Ridimensiona i contenuti all'interno del banner */
+#CybotCookiebotDialogBodyContentWrapper {
+    font-size: 14px; /* Riduci la dimensione del font se necessario */
+}
+
+/* Modifica la disposizione dei pulsanti */
+.CybotCookiebotDialogBodyLevelButtonWrapper {
     display: flex;
-    flex-wrap: wrap; /* Permette il wrapping dei checkbox se necessario */
-    gap: 15px; /* Spazio tra i checkbox */
-    justify-content: center; /* Centra i checkbox orizzontalmente */
-    margin-top: 20px; /* Spazio sopra i checkbox */
+    align-items: center; /* Centra verticalmente il contenuto */
+    justify-content: space-between; /* Distribuisci lo spazio tra i pulsanti */
+    margin: 10px 0; /* Spazio tra i pulsanti */
 }
 
-#CybotCookiebotDialogDetailBodyContentText label {
-    display: flex;
-    align-items: center;
-    padding: 10px;
-    background: #1a1a1a; /* Sfondo scuro per il checkbox */
-    border-radius: 5px; /* Angoli arrotondati */
-    cursor: pointer; /* Mostra il cursore a mano quando si passa sopra */
+/* Modifica l'aspetto delle etichette dei pulsanti */
+.CybotCookiebotDialogBodyLevelButtonLabel {
+    font-size: 12px; /* Ridimensiona il testo del pulsante */
+    flex: 1; /* Occupare tutto lo spazio disponibile */
 }
 
-#CybotCookiebotDialogDetailBodyContentText input[type="checkbox"] {
-    margin-right: 10px; /* Spazio tra il checkbox e il testo */
+/* Modifica l'aspetto dei pulsanti */
+.CybotCookiebotDialogBodyLevelButtonSliderWrapper {
+    flex-shrink: 0; /* Mantiene la dimensione del pulsante fissa */
 }
 
-#CybotCookiebotDialogDetailBodyContentText span {
-    color: #ffffff; /* Testo bianco per contrasto */
+/* Modifica l'aspetto dello slider del pulsante */
+.CybotCookiebotDialogBodyLevelButtonSlider {
+    width: 40px; /* Ridimensiona lo slider */
+    height: 20px;
 }
-
-/* Selezione del banner di CookieBot */
-#CybotCookiebotDialog {
-    width: 80% !important; /* Imposta la larghezza desiderata */
-    max-width: 800px;      /* Imposta una larghezza massima */
-    margin: 0 auto;        /* Centra il banner */
-    padding: 20px;         /* Spaziatura interna */
-    background-color: #f8f8f8; /* Colore di sfondo del banner */
-    border-radius: 10px;   /* Angoli arrotondati */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombra del banner */
-}
-
-/* Disposizione in orizzontale dei pulsanti nel banner */
-#CybotCookiebotDialogBodyButtons {
-    display: flex;
-    justify-content: space-between; /* Distribuzione uniforme dei pulsanti */
-    flex-wrap: wrap; /* Permette il ritorno a capo dei pulsanti se necessario */
-}
-
-#CybotCookiebotDialogBodyButtons a {
-    padding: 10px 20px;    /* Spaziatura interna dei pulsanti */
-    margin: 5px;           /* Margine intorno ai pulsanti */
-    text-align: center;    /* Allineamento del testo */
-    background-color: #007bff; /* Colore di sfondo dei pulsanti */
-    color: white;          /* Colore del testo dei pulsanti */
-    border-radius: 5px;    /* Angoli arrotondati dei pulsanti */
-    text-decoration: none; /* Rimuovi la sottolineatura dai link */
-}
-
-#CybotCookiebotDialogBodyButtons a:hover {
-    background-color: #0056b3; /* Colore di sfondo al passaggio del mouse */
-}
-
-/* Disposizione in orizzontale delle checkbox (se applicabile) */
-#CybotCookiebotDialogDetailBodyContentWrapper {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap; /* Permette il ritorno a capo delle checkbox se necessario */
-}
-
 
