@@ -56,33 +56,33 @@
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-    const buttonsContainer = document.getElementById('CybotCookiebotDialogBodyLevelButtons');
-    if (buttonsContainer) {
-        buttonsContainer.style.display = 'flex';
-        buttonsContainer.style.justifyContent = 'space-between';
-        buttonsContainer.style.marginTop = '10px';
+    const levelButtons = document.getElementById('CybotCookiebotDialogBodyLevelButtons');
+    if (levelButtons) {
+        levelButtons.style.display = 'flex';
+        levelButtons.style.justifyContent = 'center';
+        levelButtons.style.gap = '10px';
+        levelButtons.style.marginTop = '10px';
     }
 
-    const buttons = [
+    const buttonIds = [
         'CybotCookiebotDialogBodyLevelButtonLevelOptinNecessary',
         'CybotCookiebotDialogBodyLevelButtonLevelOptinPreferences',
         'CybotCookiebotDialogBodyLevelButtonLevelOptinStatistics',
         'CybotCookiebotDialogBodyLevelButtonLevelOptinMarketing'
     ];
 
-    buttons.forEach(id => {
+    buttonIds.forEach(id => {
         const button = document.getElementById(id);
         if (button) {
-            button.style.flex = '1';
-            button.style.textAlign = 'center';
             button.style.backgroundColor = '#555555';
             button.style.color = '#ffffff';
             button.style.border = 'none';
-            button.style.padding = '5px';
-            button.style.margin = '0 2px';
+            button.style.padding = '5px 10px';
             button.style.borderRadius = '5px';
             button.style.fontSize = '0.8em';
             button.style.cursor = 'pointer';
+            button.style.flex = '1';
+            button.style.textAlign = 'center';
         }
     });
 });
