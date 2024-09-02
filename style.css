@@ -530,32 +530,33 @@ footer.visible {
         opacity: 0;
     }
 }
-/* Forza la modifica degli stili per il banner Cookiebot */
-#CybotCookiebotDialog {
-    background-color: #1a1a1a !important; /* Sfondo scuro */
-    color: #ffffff !important; /* Testo bianco */
-}
-
-#CybotCookiebotDialogBodyLevelButtons {
-    display: flex !important; /* Disporre i pulsanti orizzontalmente */
-    flex-direction: row !important; /* Disporre orizzontalmente */
-    justify-content: space-around !important; /* Spazio uniforme tra i pulsanti */
-    flex-wrap: wrap !important; /* Avvolge i pulsanti se necessario */
-    margin: 10px 0 !important; /* Margine superiore e inferiore per distanziare i pulsanti dal testo */
+/* Stili generali per il banner di Cookiebot */
+#CybotCookiebotDialogBodyContentWrapper {
+    color: #ffffff !important; /* Cambia il colore del testo per contrastare con lo sfondo trasparente */
 }
 
 #CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll,
+#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll + label,
 #CybotCookiebotDialogBodyButtonDecline,
+#CybotCookiebotDialogBodyButtonDecline + label,
 #CybotCookiebotDialogBodyButtonAccept,
-#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowallSelection {
-    background-color: #0077ff !important; /* Sfondo blu per i pulsanti */
-    color: #ffffff !important; /* Testo bianco */
-    border: none !important; /* Rimuove il bordo */
-    padding: 10px 20px !important; /* Padding dei pulsanti */
-    border-radius: 5px !important; /* Angoli arrotondati */
-    font-size: 0.9em !important; /* Dimensione del font */
-    cursor: pointer !important; /* Mostra il cursore a mano */
-    margin: 5px !important; /* Margine tra i pulsanti */
-    display: inline-block !important; /* Mostra i pulsanti come blocchi inline */
+#CybotCookiebotDialogBodyButtonAccept + label {
+    background-color: #4CAF50 !important; /* Cambia il colore di sfondo dei pulsanti */
+    color: #ffffff !important; /* Cambia il colore del testo dei pulsanti */
+    border: none !important;
+    padding: 10px 20px !important;
+    margin: 5px !important;
+    cursor: pointer !important;
+}
+
+/* Stili specifici per dispositivi desktop */
+@media (min-width: 768px) {
+    #CybotCookiebotDialog {
+        background-color: rgba(0, 0, 0, 0.5) !important; /* Sfondo trasparente per desktop */
+    }
+
+    #CybotCookiebotDialogBodyUnderlay {
+        background-color: rgba(0, 0, 0, 0.5) !important; /* Sfondo trasparente per desktop */
+    }
 }
 
