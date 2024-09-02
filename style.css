@@ -531,51 +531,52 @@ footer.visible {
     }
 }
 
-/* Ridimensiona il contenitore principale del banner */
+/* Stile del banner per renderlo più compatto */
 #CybotCookiebotDialog {
-    max-width: 300px; /* Riduci la larghezza del banner */
-    margin: 0 auto;   /* Centra il banner */
-    padding: 10px;    /* Riduci il padding per uno spazio più compatto */
-    border-radius: 10px; /* Arrotonda gli angoli per un design più moderno */
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5); /* Aggiungi ombra per evidenziare */
+    max-width: 300px; /* Riduce la larghezza del banner */
+    margin: 0 auto; /* Centra il banner */
+    padding: 5px; /* Riduce il padding interno */
+    border-radius: 8px; /* Arrotonda gli angoli */
+    background-color: #333333; /* Sfondo scuro per meno invasività */
+    color: #ffffff; /* Testo bianco */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Aggiunge ombra per profondità */
 }
 
-/* Ridimensiona e compatta i contenuti all'interno del banner */
+/* Testo del banner compatto */
 #CybotCookiebotDialogBodyContentWrapper {
-    font-size: 12px; /* Riduci la dimensione del font */
-    line-height: 1.4; /* Compatta l'interlinea */
-    text-align: center; /* Centra il testo per un aspetto più uniforme */
+    font-size: 12px; /* Testo più piccolo */
+    line-height: 1.4; /* Distanza tra le righe ridotta */
+    margin-bottom: 5px; /* Spazio ridotto sotto il testo */
+    text-align: center; /* Centra il testo */
 }
 
 /* Disposizione dei pulsanti più compatta */
 #CybotCookiebotDialogBodyLevelButtons {
     display: flex;
-    flex-direction: column; /* Dispone i pulsanti in una colonna per risparmiare spazio */
-    align-items: center; /* Centra i pulsanti */
-    margin-top: 10px; /* Riduci lo spazio sopra i pulsanti */
+    flex-wrap: wrap; /* Pulsanti disposti su più righe se necessario */
+    justify-content: center; /* Centra i pulsanti */
+    gap: 5px; /* Riduce la distanza tra i pulsanti */
 }
 
-#CybotCookiebotDialogBodyLevelButtonWrapper {
-    display: flex;
-    justify-content: space-between;
-    width: 100%; /* I pulsanti occupano tutta la larghezza disponibile */
-    margin-bottom: 5px; /* Riduci lo spazio tra i pulsanti */
+#CybotCookiebotDialogBodyButtonWrapper {
+    margin-bottom: 0; /* Elimina il margine inferiore */
 }
 
-/* Pulsanti più compatti e omogenei */
+/* Stile compatto per i pulsanti */
 #CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll,
 #CybotCookiebotDialogBodyButtonDecline,
 #CybotCookiebotDialogBodyButtonAccept,
 #CybotCookiebotDialogBodyLevelButtonLevelOptinAllowallSelection {
-    background-color: #0077ff; /* Colore di sfondo blu */
-    color: #ffffff; /* Testo bianco */
-    border: none; /* Rimuovi i bordi */
-    padding: 8px 12px; /* Riduci il padding per pulsanti più compatti */
+    background-color: #0077ff; /* Colore pulsanti */
+    color: #ffffff; /* Colore del testo */
+    border: none; /* Rimuove bordi */
+    padding: 6px 10px; /* Riduce il padding per pulsanti più compatti */
     border-radius: 5px; /* Arrotonda gli angoli dei pulsanti */
-    font-size: 0.9em; /* Riduci leggermente la dimensione del font */
-    cursor: pointer; /* Mostra il cursore a mano */
-    margin: 3px 0; /* Margine ridotto tra i pulsanti */
-    width: 100%; /* Pulsanti occupano tutta la larghezza disponibile */
+    font-size: 0.85em; /* Testo più piccolo nei pulsanti */
+    cursor: pointer; /* Cursore a mano */
+    flex: 1; /* Pulsanti occupano lo stesso spazio */
     text-align: center; /* Centra il testo nei pulsanti */
+    min-width: 100px; /* Larghezza minima per i pulsanti */
 }
+
 
