@@ -531,33 +531,78 @@ footer.visible {
     }
 }
 
-/* Forza la modifica degli stili per il banner Cookiebot */
+/* Stile per ridimensionare il banner CookieBot */
 #CybotCookiebotDialog {
-    background-color: #1a1a1a !important; /* Sfondo scuro */
-    color: #ffffff !important; /* Testo bianco */
+    max-width: 800px; /* Imposta una larghezza massima per il banner */
+    margin: 0 auto; /* Centra il banner orizzontalmente */
+    padding: 20px; /* Padding interno per una migliore spaziatura */
+    box-sizing: border-box;
+    border-radius: 10px; /* Angoli arrotondati per un aspetto più elegante */
 }
 
-#CybotCookiebotDialogBodyLevelButtons {
-    display: flex !important; /* Disporre i pulsanti orizzontalmente */
-    flex-direction: row !important; /* Disporre orizzontalmente */
-    justify-content: space-around !important; /* Spazio uniforme tra i pulsanti */
-    flex-wrap: wrap !important; /* Avvolge i pulsanti se necessario */
-    margin: 10px 0 !important; /* Margine superiore e inferiore per distanziare i pulsanti dal testo */
+/* Stile per disporre i checkbox orizzontalmente */
+#CybotCookiebotDialogDetailBodyContentText {
+    display: flex;
+    flex-wrap: wrap; /* Permette il wrapping dei checkbox se necessario */
+    gap: 15px; /* Spazio tra i checkbox */
+    justify-content: center; /* Centra i checkbox orizzontalmente */
+    margin-top: 20px; /* Spazio sopra i checkbox */
 }
 
-#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll,
-#CybotCookiebotDialogBodyButtonDecline,
-#CybotCookiebotDialogBodyButtonAccept,
-#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowallSelection {
-    background-color: #0077ff !important; /* Sfondo blu per i pulsanti */
-    color: #ffffff !important; /* Testo bianco */
-    border: none !important; /* Rimuove il bordo */
-    padding: 10px 20px !important; /* Padding dei pulsanti */
-    border-radius: 5px !important; /* Angoli arrotondati */
-    font-size: 0.9em !important; /* Dimensione del font */
-    cursor: pointer !important; /* Mostra il cursore a mano */
-    margin: 5px !important; /* Margine tra i pulsanti */
-    display: inline-block !important; /* Mostra i pulsanti come blocchi inline */
+#CybotCookiebotDialogDetailBodyContentText label {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background: #1a1a1a; /* Sfondo scuro per il checkbox */
+    border-radius: 5px; /* Angoli arrotondati */
+    cursor: pointer; /* Mostra il cursore a mano quando si passa sopra */
+}
+
+#CybotCookiebotDialogDetailBodyContentText input[type="checkbox"] {
+    margin-right: 10px; /* Spazio tra il checkbox e il testo */
+}
+
+#CybotCookiebotDialogDetailBodyContentText span {
+    color: #ffffff; /* Testo bianco per contrasto */
+}
+
+/* Selezione del banner di CookieBot */
+#CybotCookiebotDialog {
+    width: 80% !important; /* Imposta la larghezza desiderata */
+    max-width: 800px;      /* Imposta una larghezza massima */
+    margin: 0 auto;        /* Centra il banner */
+    padding: 20px;         /* Spaziatura interna */
+    background-color: #f8f8f8; /* Colore di sfondo del banner */
+    border-radius: 10px;   /* Angoli arrotondati */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombra del banner */
+}
+
+/* Disposizione in orizzontale dei pulsanti nel banner */
+#CybotCookiebotDialogBodyButtons {
+    display: flex;
+    justify-content: space-between; /* Distribuzione uniforme dei pulsanti */
+    flex-wrap: wrap; /* Permette il ritorno a capo dei pulsanti se necessario */
+}
+
+#CybotCookiebotDialogBodyButtons a {
+    padding: 10px 20px;    /* Spaziatura interna dei pulsanti */
+    margin: 5px;           /* Margine intorno ai pulsanti */
+    text-align: center;    /* Allineamento del testo */
+    background-color: #007bff; /* Colore di sfondo dei pulsanti */
+    color: white;          /* Colore del testo dei pulsanti */
+    border-radius: 5px;    /* Angoli arrotondati dei pulsanti */
+    text-decoration: none; /* Rimuovi la sottolineatura dai link */
+}
+
+#CybotCookiebotDialogBodyButtons a:hover {
+    background-color: #0056b3; /* Colore di sfondo al passaggio del mouse */
+}
+
+/* Disposizione in orizzontale delle checkbox (se applicabile) */
+#CybotCookiebotDialogDetailBodyContentWrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Permette il ritorno a capo delle checkbox se necessario */
 }
 
 
