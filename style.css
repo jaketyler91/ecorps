@@ -531,54 +531,33 @@ footer.visible {
     }
 }
 
-/* Stile generale del banner */
+/* Forza la modifica degli stili per il banner Cookiebot */
 #CybotCookiebotDialog {
-    background-color: #333 !important;
-    color: #fff !important;
-    font-size: 14px !important;
-    border-radius: 8px !important;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5) !important;
-    width: 90% !important;  /* Usa 90% della larghezza della pagina */
-    max-width: 500px !important;
-    margin: 0 auto !important;
-    padding: 20px !important; /* Maggior spazio interno per evitare tagli */
-    bottom: 20px !important;  /* Aggiungi spazio dal bordo inferiore */
-    left: 0 !important;
-    right: 0 !important;
-    position: fixed !important;
-    z-index: 9999 !important;
-    display: block !important; /* Assicura che il banner sia visibile */
+    background-color: #1a1a1a !important; /* Sfondo scuro */
+    color: #ffffff !important; /* Testo bianco */
 }
 
-/* Contenuto del banner */
-#CybotCookiebotDialogBodyContentWrapper {
-    text-align: center !important;
-    margin-bottom: 15px !important; /* Spazio tra testo e pulsanti */
-}
-
-/* Pulsanti di livello */
 #CybotCookiebotDialogBodyLevelButtons {
-    display: flex !important;
-    flex-wrap: wrap !important; /* Permette ai pulsanti di andare su più righe */
-    justify-content: center !important;
-    gap: 10px !important; /* Spazio tra i pulsanti */
+    display: flex !important; /* Disporre i pulsanti orizzontalmente */
+    flex-direction: row !important; /* Disporre orizzontalmente */
+    justify-content: space-around !important; /* Spazio uniforme tra i pulsanti */
+    flex-wrap: wrap !important; /* Avvolge i pulsanti se necessario */
+    margin: 10px 0 !important; /* Margine superiore e inferiore per distanziare i pulsanti dal testo */
 }
 
-/* Stile dei pulsanti */
-#CybotCookiebotDialogBodyLevelButtons button {
-    background-color: #0077ff !important;
-    color: #fff !important;
-    border: none !important;
-    padding: 10px 20px !important;
-    margin: 5px !important;  /* Spazio tra i pulsanti */
-    border-radius: 5px !important;
-    cursor: pointer !important;
-    font-size: 12px !important;
-    transition: background-color 0.3s !important;
-    flex-grow: 1; /* I pulsanti si allargano per occupare lo spazio disponibile */
+#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll,
+#CybotCookiebotDialogBodyButtonDecline,
+#CybotCookiebotDialogBodyButtonAccept,
+#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowallSelection {
+    background-color: #0077ff !important; /* Sfondo blu per i pulsanti */
+    color: #ffffff !important; /* Testo bianco */
+    border: none !important; /* Rimuove il bordo */
+    padding: 10px 20px !important; /* Padding dei pulsanti */
+    border-radius: 5px !important; /* Angoli arrotondati */
+    font-size: 0.9em !important; /* Dimensione del font */
+    cursor: pointer !important; /* Mostra il cursore a mano */
+    margin: 5px !important; /* Margine tra i pulsanti */
+    display: inline-block !important; /* Mostra i pulsanti come blocchi inline */
 }
 
-/* Hover sui pulsanti */
-#CybotCookiebotDialogBodyLevelButtons button:hover {
-    background-color: #005bb5 !important;
-}
+
