@@ -530,3 +530,25 @@ footer.visible {
         opacity: 0;
     }
 }
+
+.cookiebanner {
+    position: fixed;
+    bottom: 0; /* Posiziona il banner in basso alla pagina */
+    left: 0;
+    width: 100%; /* Occupa tutta la larghezza della pagina */
+    background-color: rgba(0, 0, 0, 0.8); /* Imposta uno sfondo semi-trasparente */
+    color: #fff; /* Testo bianco */
+    padding: 10px 20px; /* Padding per il contenuto */
+    text-align: center; /* Centra il testo */
+    z-index: 10000; /* Assicurati che il banner sia sopra tutto il resto */
+}
+
+.cookiebanner a {
+    color: #0077ff; /* Colore del link */
+    text-decoration: underline; /* Sottolinea i link */
+}
+
+.cookiebanner a:hover {
+    color: #005bb5; /* Cambia colore al passaggio del mouse */
+}
+
