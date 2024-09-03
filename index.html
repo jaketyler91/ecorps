@@ -58,19 +58,27 @@
 document.addEventListener('DOMContentLoaded', function() {
     const banner = document.getElementById('CybotCookiebotDialog');
     if (banner) {
-        // Stili personalizzati per il banner
-        banner.style.backgroundColor = '#333';
-        banner.style.color = '#fff';
-        banner.style.fontSize = '14px';
-        banner.style.borderRadius = '8px';
-        banner.style.boxShadow = '0px 0px 10px rgba(0, 0, 0, 0.5)';
-        
+        // Forzare l'applicazione degli stili
+        banner.style.setProperty('background-color', '#333', 'important');
+        banner.style.setProperty('color', '#fff', 'important');
+        banner.style.setProperty('font-size', '14px', 'important');
+        banner.style.setProperty('border-radius', '8px', 'important');
+        banner.style.setProperty('box-shadow', '0px 0px 10px rgba(0, 0, 0, 0.5)', 'important');
+        banner.style.setProperty('max-width', '500px', 'important');
+        banner.style.setProperty('margin', '0 auto', 'important');
+        banner.style.setProperty('padding', '10px', 'important');
+        banner.style.setProperty('bottom', '0', 'important');
+        banner.style.setProperty('left', '0', 'important');
+        banner.style.setProperty('right', '0', 'important');
+        banner.style.setProperty('position', 'fixed', 'important');
+        banner.style.setProperty('z-index', '9999', 'important');
+
         const buttonsContainer = document.getElementById('CybotCookiebotDialogBodyLevelButtons');
         if (buttonsContainer) {
-            buttonsContainer.style.display = 'flex';
-            buttonsContainer.style.justifyContent = 'space-around';
+            buttonsContainer.style.setProperty('display', 'flex', 'important');
+            buttonsContainer.style.setProperty('justify-content', 'space-around', 'important');
         }
-        
+
         const buttons = [
             'CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll',
             'CybotCookiebotDialogBodyButtonDecline',
@@ -81,18 +89,19 @@ document.addEventListener('DOMContentLoaded', function() {
         buttons.forEach(id => {
             const button = document.getElementById(id);
             if (button) {
-                button.style.backgroundColor = '#0077ff';
-                button.style.color = '#fff';
-                button.style.border = 'none';
-                button.style.padding = '8px 12px';
-                button.style.borderRadius = '5px';
-                button.style.fontSize = '12px';
-                button.style.cursor = 'pointer';
-                button.style.margin = '0 4px';
+                button.style.setProperty('background-color', '#0077ff', 'important');
+                button.style.setProperty('color', '#fff', 'important');
+                button.style.setProperty('border', 'none', 'important');
+                button.style.setProperty('padding', '8px 12px', 'important');
+                button.style.setProperty('border-radius', '5px', 'important');
+                button.style.setProperty('font-size', '12px', 'important');
+                button.style.setProperty('cursor', 'pointer', 'important');
+                button.style.setProperty('margin', '0 4px', 'important');
             }
         });
     }
 });
+
 
 
 
