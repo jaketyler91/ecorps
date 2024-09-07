@@ -1,5 +1,109 @@
 
 
+textarea {
+    resize: vertical;
+}
+
+.btn {
+    padding: 15px 30px;
+    background: #0077ff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+    cursor: pointer;
+    border: none;
+}
+
+.btn:hover {
+    background: #005bb5;
+}
+
+/* Footer Styling */
+footer {
+    width: 100%;
+    padding: 100px 0;
+    box-sizing: border-box;
+    background: transparent; /* Sfondo trasparente per mantenere l'animazione */
+    color: #ccc; /* Colore testo */
+    font-family: 'Arial', sans-serif; /* Font famiglia */
+    font-size: 0.9em; /* Riduce la dimensione del carattere */
+    margin-top: -100px; /* Aumenta il margine superiore per spostare il footer verso l'alto */
+    opacity: 0; /* Inizialmente nascosto */
+    transform: translateY(50px); /* Spostato verso il basso */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Transizione fluida */
+}
+
+footer.visible {
+    opacity: 1;
+    transform: translateY(0);
+    animation: materialize 0.8s ease forwards; /* Aggiunto l'effetto di materializzazione */
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center; /* Centrato il testo */
+    padding: 0 20px;
+}
+
+.info-column {
+    flex: 1;
+    min-width: 200px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrato il testo rispetto alla colonna */
+}
+
+.info-column h2 {
+    margin-bottom: 10px;
+    font-weight: bold; /* Mantieni il grassetto */
+}
+
+.info-column p {
+    margin: 5px 0;
+}
+
+.hamburger-menu {
+    display: none; /* Nascondi il menu hamburger per default */
+}
+
+.hamburger-icon {
+    width: 30px;
+    height: 3px;
+    background: #fff;
+    position: relative;
+    cursor: pointer;
+}
+
+.hamburger-icon:before,
+.hamburger-icon:after {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    transition: transform 0.3s ease;
+}
+
+.hamburger-icon:before {
+    top: -10px;
+}
+
+.hamburger-icon:after {
+    top: 10px;
+}
+
+
+/*Problema Banner Cookie qua sopra */
+
 /* Stile dell'overlay del menu */
 
 .overlay {
