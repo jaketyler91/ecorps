@@ -205,26 +205,7 @@ textarea {
     background: #005bb5;
 }
 
-/* Footer Styling */
-footer {
-    width: 100%;
-    padding: 100px 0;
-    box-sizing: border-box;
-    background: transparent; /* Sfondo trasparente per mantenere l'animazione */
-    color: #ccc; /* Colore testo */
-    font-family: 'Arial', sans-serif; /* Font famiglia */
-    font-size: 0.9em; /* Riduce la dimensione del carattere */
-    margin-top: -100px; /* Aumenta il margine superiore per spostare il footer verso l'alto */
-    opacity: 0; /* Inizialmente nascosto */
-    transform: translateY(50px); /* Spostato verso il basso */
-    transition: opacity 0.5s ease, transform 0.5s ease; /* Transizione fluida */
-}
 
-footer.visible {
-    opacity: 1;
-    transform: translateY(0);
-    animation: materialize 0.8s ease forwards; /* Aggiunto l'effetto di materializzazione */
-}
 
 .contact-info {
     display: flex;
