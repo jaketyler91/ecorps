@@ -203,105 +203,7 @@ textarea {
     margin: 5px 0;
 }
 
-.hamburger-menu {
-    display: none; /* Nascondi il menu hamburger per default */
-}
 
-.hamburger-icon {
-    width: 30px;
-    height: 3px;
-    background: #fff;
-    position: relative;
-    cursor: pointer;
-}
-
-.hamburger-icon:before,
-.hamburger-icon:after {
-    content: '';
-    display: block;
-    width: 30px;
-    height: 3px;
-    background: #fff;
-    position: absolute;
-    left: 0;
-    transition: transform 0.3s ease;
-}
-
-.hamburger-icon:before {
-    top: -10px;
-}
-
-.hamburger-icon:after {
-    top: 10px;
-}
-
-/* Stile dell'overlay del menu */
-
-.overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.8);
-    z-index: 999;
-    display: none;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column; /* Dispone gli elementi in colonna */
-    text-align: center; /* Centra il testo */
-}
-
-.overlay a {
-    color: #fff;
-    font-size: 2em; /* Aumenta la dimensione del carattere */
-    text-decoration: none;
-    margin: 20px 0; /* Aggiunge spazio tra i link */
-    transition: color 0.3s;
-}
-
-.overlay a:hover {
-    color: #0077ff;
-}
-
-.overlay.active {
-    display: flex;
-}
-
-.overlay nav ul {
-    display: flex;
-    flex-direction: column; /* Imposta le voci di menu in colonna */
-}
-
-.overlay nav ul li {
-    margin: 20px 0; /* Aggiunge spazio tra le voci di menu */
-}
-
-/* Media query per dispositivi mobili */
-@media screen and (max-width: 768px) {
-    .contact-info {
-        flex-direction: column; /* Disporre le colonne in verticale */
-        align-items: center; /* Centrare le colonne */
-    }
-    
-    .info-column {
-        min-width: 100%; /* Occupare l'intera larghezza disponibile */
-        margin-bottom: 20px; /* Aggiungere margine inferiore */
-    }
-    
-    nav ul {
-        display: none; /* Nascondere la navigazione principale */
-    }
-
-    .hamburger-menu {
-        display: block; /* Mostrare il menu hamburger */
-    }
-
-    footer {
-        padding: 60px 0; /* Modifica del padding del footer per dispositivi mobili */
-    }
-
-}
 /* Aggiungi questo stile alla fine del tuo file style.css */
 
 .services {
@@ -411,13 +313,7 @@ textarea {
 }
 
 /* Stile del prompt dei comandi */
-/* Stile per il prompt di comando */
-/* Stile per il prompt di comando */
-/* Stili per il prompt dei comandi */
-/* Stili per il prompt dei comandi */
-/* Stili per il prompt dei comandi */
-/* Stili per il prompt dei comandi */
-/* Stili per il prompt dei comandi *//* Stili per il prompt dei comandi */
+
 .command-prompt {
     background-color: rgba(0, 0, 0, 0.37);
     color: ##FFFFFF;	/*00ff00 Verde stile DOS*/
