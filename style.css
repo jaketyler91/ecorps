@@ -72,6 +72,7 @@ nav ul li {
 }
 
 nav ul li a {
+    font-family: 'Montserrat', sans-serif;
     color: #fff; /* Bianco */
     text-decoration: none;
     padding: 10px;
