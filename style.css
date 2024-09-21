@@ -171,25 +171,129 @@ form {
     width: 250px; /* Aumentata la larghezza al 100% del contenitore }
 */
 
+/* Stile per il link */
+.form-group a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.form-group a:hover {
+    text-decoration: underline;
+}
+
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Layout a colonna per schermi di piccole dimensioni (fino a 600px) */
+@media (max-width: 600px) {
+    .grid-container {
+        display: block; /* Cambia il display da grid a block per dispositivi mobili */
+    }
+
+    .form-group {
+        width: 60%; /* Assicurati che i campi occupino tutta la larghezza */
+        margin-bottom: 15px; /* Spazio tra i campi */
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        padding: 8px; /* Riduce lo spazio interno nei campi */
+        font-size: 0.9em; /* Riduce la dimensione del testo nei campi */
+        max-width: 60%; /* Riduce la larghezza dei campi a un massimo del 100% */
+        margin: 0 auto; /* Centro i campi orizzontalmente */
+        display: block; /* Assicurati che i campi si comportino come blocchi */
+    }
+
+    .contact-form button {
+        padding: 12px; /* Riduce lo spazio interno nel pulsante */
+        font-size: 0.9em; /* Riduce la dimensione del testo nel pulsante */
+        max-width: 60%; /* Assicurati che il pulsante occupi la larghezza completa */
+        margin: 0 auto; /* Centro il pulsante */
+        display: block; /* Assicurati che il pulsante si comporti come un blocco */
+    }
+
+    .form-checkbox {
+        display: flex;
+        align-items: center;
+        gap: 10px; /* Spazio tra la checkbox e la label */
+        max-width: 60%; /* Occupa la larghezza completa del contenitore */
+        margin: 0 auto; /* Centra il gruppo checkbox-label */
+        padding: 0; /* Rimuove il padding aggiuntivo */
+    }
+
+    .form-checkbox input[type="checkbox"] {
+        margin: 0; /* Rimuove eventuali margini dal checkbox */
+    }
+
+    .form-checkbox label {
+        text-align: left; /* Allinea il testo a sinistra */
+        display: inline-block;
+        line-height: 1.2em; /* Regola l'altezza della linea */
+        word-break: break-word; /* Evita che il testo venga interrotto */
+        font-size: 0.9em; /* Riduce la dimensione del testo */
+    }
+    
+    /* Stile per il link all'interno della label */
+    .form-checkbox label a {
+        color: #007bff; /* Colore del link */
+        text-decoration: none; /* Rimuove la sottolineatura predefinita */
+        display: inline; /* Mantiene il link allineato alla stessa riga del testo */
+        white-space: nowrap; /* Evita che il link vada a capo */
+    }
+
+    /* Aggiunge la sottolineatura al passaggio del mouse */
+    .form-checkbox label a:hover {
+        text-decoration: underline;
+    }
+
+}
+
+
 .form-group {
-    margin-bottom: 15px;
     width: 100%; /* Aumentata la larghezza al 100% del contenitore */
+}
+
+
+textarea {
+    resize: vertical;
+    width: 100%;
+}
+
+.form-message {
+    grid-column: span 2; /* La textarea occuperà entrambe le colonne */
+}
+
+.form-checkbox {
+    grid-column: span 2; /* La textarea occuperà entrambe le colonne */
+    margin-bottom: 15px; /* Spazio tra la checkbox e il campo successivo */
+
 }
 
 input[type="text"],
 input[type="email"],
 textarea {
-    width: calc(100% - 22px); /* Imposta la larghezza al 100% meno il bordo */
+    width: 100%;
     padding: 10px;
     font-size: 1em;
     border: 1px solid #ccc;
     border-radius: 5px;
-    box-sizing: border-box; /* Assicura che il padding non aumenti la larghezza */
+    box-sizing: border-box;
 }
 
-textarea {
-    resize: vertical;
+
+.message-row {
+    width: 100%; /* Questo fa sì che il campo "Message" occupi tutta la larghezza */
+    margin-bottom: 10px;
 }
+
+
 
 .btn {
     padding: 15px 30px;
