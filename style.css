@@ -672,6 +672,7 @@ footer.visible {
     }
 
     .command-prompt-wrapper {
+        margin-top: 0px;
         margin-left: 12%;
         margin-bottom: 120px;
         align-items: center; /* Assicurati di mantenere l'allineamento */
