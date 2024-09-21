@@ -68,22 +68,32 @@
                     
                         <input type="hidden" name="_redirect" value="contact.html"> <!-- URL di reindirizzamento verso la stessa pagina -->
                         
+                    <div class="grid-container">
                         <div class="form-group">
-                            <input type="text" name="nome" placeholder="Nome" required>
+                            <input type="text" name="nome&cognome" placeholder="Nome e cognome" required>
                         </div>
                         <div class="form-group">
-                            <input type="text" name="surname" placeholder="Cognome" required>
+                            <input type="text" name="azienda" placeholder="Azienda" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="telefono" placeholder="Telefono" required>
                         </div>
                         <div class="form-group">
                             <input type="email" name="email" placeholder="Email" required>
                         </div>
-
-                        <div class="form-group">
-                            <textarea name="message" placeholder="Message" rows="4" required></textarea>
+                        <div class="form-group form-message">
+                            <textarea name="message" placeholder="Message" rows="10" required></textarea>
                         </div>
-                        
+                        <div class="form-group form-checkbox">
+                            <input type="checkbox" name="consent" required>
+                            <label for="consent">
+                                Acconsento al trattamento dei dati personali secondo la <a href="privacy-policy.html" target="_blank"> privacy policy</a>
+                            </label>
+                        </div>
+                    </div>
+
                         <button type="submit" class="btn">Invia</button>
-                      </form>
+                    </form>
                       
                       <div id="confirmation" style="display: none;">
                         <p>Grazie per averci contattato! Il tuo messaggio è stato inviato con successo.
