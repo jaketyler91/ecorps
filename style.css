@@ -245,7 +245,7 @@ form {
         word-break: break-word; /* Evita che il testo venga interrotto */
         font-size: 0.9em; /* Riduce la dimensione del testo */
     }
-    
+
     /* Stile per il link all'interno della label */
     .form-checkbox label a {
         color: #007bff; /* Colore del link */
@@ -618,10 +618,78 @@ footer.visible {
 /* Stili per il prompt dei comandi *//* Stili per il prompt dei comandi */
 /* Stile del prompt dei comandi */
 /* Contenitore per il prompt dei comandi */
-.command-prompt-wrapper {
+.presentation-container {
     display: flex;
-    justify-content: flex-start; /* Allinea il contenuto a sinistra */
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+/* Prompt dei comandi */
+.command-prompt-wrapper {
+    flex: 1;
+    margin-top: 100px;
+    margin-right: 20px;
+}
+
+/* Stile dei contatori */
+.counters {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 300px;
+}
+
+.counter {
+    background-color: rgba(51, 51, 51, 0.9);
     padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.counter h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.counter p {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Adattamento per schermi più piccoli */
+@media (max-width: 768px) {
+    .presentation-container {
+        flex-direction: column;
+        align-items: center; /* Centra tutto il contenitore */
+        text-align: center; /* Assicurati che il testo sia centrato */
+    }
+
+    .command-prompt-wrapper {
+        margin-left: 12%;
+        margin-bottom: 120px;
+        align-items: center; /* Assicurati di mantenere l'allineamento */
+
+    }
+    
+    /* Centrare i contatori */
+    .counters {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Aggiungi questa linea per centrare i contatori */
+        justify-content: center; /* Centra verticalmente se necessario */
+        gap: 20px;
+    }
+
+    .counter {
+        width: 100%; /* Aggiungi questa linea per far sì che occupino la larghezza disponibile */
+    }
 }
 
 /* Stile del prompt dei comandi */
