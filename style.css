@@ -672,11 +672,18 @@ footer.visible {
     }
 
     .command-prompt-wrapper {
-        margin-top: -30px;
-        /*margin-left: 12%;*/
+        margin-right: 0;
         margin-bottom: 100px;
-        align-items: center; /* Assicurati di mantenere l'allineamento */
+        width: 100%; /* Assicurati che prenda tutta la larghezza */
+        max-width: 400px; /* Limita la larghezza massima per mantenere proporzioni */
+        height: 200px; /* Imposta un'altezza fissa o usa 'auto' se preferisci */
+    }
 
+    .command-prompt {
+        height: 100%; /* Riempi l'altezza del wrapper */
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Centra verticalmente il contenuto */
     }
     
     /* Centrare i contatori */
