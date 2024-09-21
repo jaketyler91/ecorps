@@ -151,6 +151,8 @@ p {
     animation: materialize 0.8s ease forwards; /* Aggiunto l'effetto di materializzazione */
 }
 
+
+
 @keyframes materialize {
     from {
         opacity: 0;
@@ -170,6 +172,10 @@ form {
     justify-content: center;
     width: 250px; /* Aumentata la larghezza al 100% del contenitore }
 */
+
+
+/* Stile per il contenitore della checkbox */
+
 
 /* Stile per il link */
 .form-group a {
@@ -610,16 +616,26 @@ footer.visible {
 /* Stili per il prompt dei comandi */
 /* Stili per il prompt dei comandi */
 /* Stili per il prompt dei comandi *//* Stili per il prompt dei comandi */
+/* Stile del prompt dei comandi */
+/* Contenitore per il prompt dei comandi */
+.command-prompt-wrapper {
+    display: flex;
+    justify-content: flex-start; /* Allinea il contenuto a sinistra */
+    padding: 20px;
+}
+
+/* Stile del prompt dei comandi */
 .command-prompt {
     background-color: rgba(0, 0, 0, 0.37);
-    color: ##FFFFFF;	/*00ff00 Verde stile DOS*/
+    color: #FFFFFF; /* Colore del testo */
     padding: 20px;
     border-radius: 5px;
     width: 80%;
     max-width: 800px;
-    margin: 20px auto;
     font-family: 'Courier New', Courier, monospace;
+    text-align: left; /* Assicura che il testo sia allineato a sinistra */
 }
+
 
 .prompt-header {
     display: flex;
