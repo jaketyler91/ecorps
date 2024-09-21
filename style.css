@@ -674,7 +674,7 @@ footer.visible {
     .command-prompt-wrapper {
         margin-top: -30px;
         /*margin-left: 12%;*/
-        margin-bottom: 120px;
+        margin-bottom: 100px;
         align-items: center; /* Assicurati di mantenere l'allineamento */
 
     }
