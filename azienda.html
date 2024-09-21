@@ -67,15 +67,35 @@
             </div>
         </header>
         <main>
-            <section class="command-prompt">
-                <div class="prompt-header">
-                    <span class="prompt-icon"></span>
-                    <span class="prompt-title">Cmd.exe - E-Corps</span>
+            <section class="presentation-container">
+                <!-- Prompt dei comandi -->
+                <div class="command-prompt-wrapper">
+                    <div class="command-prompt">
+                        <div class="prompt-header">
+                            <span class="prompt-icon"></span>
+                            <span class="prompt-title">Cmd.exe - E-Corps</span>
+                        </div>
+                        <div class="prompt-body">
+                            <div class="command-line">
+                                <span class="prompt-path">C:\Users\E-Corps&gt;</span>
+                                <span id="typed-text-placeholder"></span><span id="cursor" style="display:none;">&#9646;</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="prompt-body">
-                    <div class="command-line">
-                        <span class="prompt-path">C:\Users\E-Corps&gt;</span>
-                        <span id="typed-text-placeholder"></span><span id="cursor" style="display:none;">&#9646;</span>
+                        <!-- Contatori -->
+                <div class="counters">
+                    <div class="counter">
+                        <h3>Progetti Completati</h3>
+                        <p id="counter1">0</p>
+                    </div>
+                    <div class="counter">
+                        <h3>Clienti Soddisfatti</h3>
+                        <p id="counter2">0</p>
+                    </div>
+                    <div class="counter">
+                        <h3>Anni di Esperienza</h3>
+                        <p id="counter3">0</p>
                     </div>
                 </div>
             </section>
@@ -98,5 +118,29 @@
 
     <script src="script.js"></script>
     <script src="about.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const counters = [
+                { element: document.getElementById("counter1"), endValue: 150 },
+                { element: document.getElementById("counter2"), endValue: 300 },
+                { element: document.getElementById("counter3"), endValue: 10 }
+            ];
+
+            counters.forEach(counter => {
+                let count = 0;
+                const increment = Math.ceil(counter.endValue / 100); // Incremento per ogni tick
+                const updateCounter = () => {
+                    if (count < counter.endValue) {
+                        count += increment;
+                        counter.element.innerText = Math.min(count, counter.endValue); // Limita il valore massimo
+                        requestAnimationFrame(updateCounter);
+                    }
+                };
+                updateCounter();
+            });
+        });
+    </script>
+
+
 </body>
 </html>
