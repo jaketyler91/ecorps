@@ -672,14 +672,15 @@ footer.visible {
 /* Adattamento per schermi più piccoli */
 @media (max-width: 768px) {
     .presentation-container {
-        flex-direction: column; 
+        flex-direction: column;
+        margin-top: -150px; 
         align-items: center; /* Centra tutto il contenitore */
         text-align: center; /* Assicurati che il testo sia centrato */
     }
 
     .command-prompt-wrapper {
         margin-right: 0;
-        margin-bottom: 100px;
+        margin-bottom: 80px;
         width: 100%; /* Assicurati che prenda tutta la larghezza */
         max-width: 400px; /* Limita la larghezza massima per mantenere proporzioni */
         height: 200px; /* Imposta un'altezza fissa o usa 'auto' se preferisci */
