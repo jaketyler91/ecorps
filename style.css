@@ -672,15 +672,13 @@ footer.visible {
 /* Adattamento per schermi più piccoli */
 @media (max-width: 768px) {
     .presentation-container {
-        flex-direction: column;
-        margin-top: -30px 
+        flex-direction: column; 
         align-items: center; /* Centra tutto il contenitore */
         text-align: center; /* Assicurati che il testo sia centrato */
     }
 
     .command-prompt-wrapper {
         margin-right: 0;
-        margin-top: -30px 
         margin-bottom: 100px;
         width: 100%; /* Assicurati che prenda tutta la larghezza */
         max-width: 400px; /* Limita la larghezza massima per mantenere proporzioni */
@@ -690,7 +688,6 @@ footer.visible {
     .command-prompt {
         height: 100%; /* Riempi l'altezza del wrapper */
         display: flex;
-        margin-top: -30px 
         flex-direction: column;
         justify-content: center; /* Centra verticalmente il contenuto */
     }
