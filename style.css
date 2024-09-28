@@ -331,7 +331,7 @@ footer {
     color: #ccc; /* Colore testo */
     font-family: 'Arial', sans-serif; /* Font famiglia */
     font-size: 0.9em; /* Riduce la dimensione del carattere */
-    margin-top: -100px; /* Aumenta il margine superiore per spostare il footer verso l'alto */
+    margin-top: -150px; /* Aumenta il margine superiore per spostare il footer verso l'alto */
     opacity: 0; /* Inizialmente nascosto */
     transform: translateY(50px); /* Spostato verso il basso */
     transition: opacity 0.5s ease, transform 0.5s ease; /* Transizione fluida */
