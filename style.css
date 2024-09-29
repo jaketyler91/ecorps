@@ -792,7 +792,7 @@ body.page-privacy h4 {
 }
 
 /* Allineamento dei bordi di sinistra e destra */
-body.page-privacy .content {
+body.page-privacy .privacy-policy {
     padding-left: 20px; /* Aggiusta il padding sinistro */
     padding-right: 20px; /* Aggiusta il padding destro */
     max-width: 1200px; /* Imposta una larghezza massima */
