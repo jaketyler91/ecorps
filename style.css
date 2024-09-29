@@ -769,3 +769,37 @@ footer.visible {
         opacity: 0;
     }
 }
+
+/* Privacy Policy */
+/* Aggiungi una classe specifica per questa pagina nel tag body */
+body.page-privacy {
+    font-family: 'Montserrat', sans-serif; /* Imposta il carattere Montserrat */
+}
+
+/* Giustificazione del testo per i paragrafi */
+body.page-privacy p {
+    text-align: justify; /* Giustifica il testo */
+    font-size: 14px; /* Riduci il font-size globale */
+
+}
+
+/* Allineamento dei titoli */
+body.page-privacy h1,
+body.page-privacy h3,
+body.page-privacy h4 {
+    text-align: left; /* Allinea i titoli a sinistra */
+    color:#fff;
+}
+
+/* Allineamento dei bordi di sinistra e destra */
+body.page-privacy .content {
+    padding-left: 20px; /* Aggiusta il padding sinistro */
+    padding-right: 20px; /* Aggiusta il padding destro */
+    max-width: 1200px; /* Imposta una larghezza massima */
+    margin: 0 auto; /* Centra il contenuto */
+    text-align: left; 
+}
+
+body.page-privacy #privacy-policy {
+    margin-top: 4%; /* Aggiunge uno spazio di 50px tra l'header e la privacy policy */
+}
