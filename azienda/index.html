@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azienda | E-Corps</title>
+    
+    <!-- This site is optimized with the Yoast SEO Plugin-->
+    <meta name="description" content="Azienda leader nella consulenza informatica, composta da un team di tecnici altamente specializzato." />
+    <link rel="canonical" href="https://www.e-corps.it/azienda/" />
+    <meta property="og:title" content="Azienda | E-Corps" />
+    <meta property="og:url" content="https://www.e-corps.it/azienda/" />
+    <meta property="og:site_name" content="E-Corps" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <!-- / Yoast SEO plugin. -->
+
+      <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "name": "Azienda",
+            "url": "https://www.e-corps.it/azienda"
+        }
+      </script>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png">
+    <link rel="manifest" href="assets/icons/site.webmanifest">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="0a1aea89-54bd-45f1-84af-0efcf15cc316" data-blockingmode="auto" type="text/javascript"></script>
+</head>
+<body>
+    <div id="background-animation"></div>
+    <div class="content">
+        <header>
+            <div class="header-container">
+                <a href="https://www.e-corps.it/index.html">
+                    <div class="logo">
+                        <img src="logopng.png" alt="E-Corps Logo">
+                    </div>
+                </a>
+                <nav>
+                    <ul>
+                        <li><a href="https://www.e-corps.it/azienda.html">Azienda</a></li>
+                        <li><a href="https://www.e-corps.it/servizi.html">Servizi</a></li>
+                        <li><a href="https://www.e-corps.it/contatti.html">Contatti</a></li>
+                    </ul>
+                </nav>
+                <div class="hamburger-menu">
+                    <div class="hamburger-icon"></div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="presentation-container">
+                <!-- Prompt dei comandi -->
+                <div class="command-prompt-wrapper">
+                    <div class="command-prompt">
+                        <div class="prompt-header">
+                            <span class="prompt-icon"></span>
+                            <span class="prompt-title">Cmd.exe - E-Corps</span>
+                        </div>
+                        <div class="prompt-body">
+                            <div class="command-line">
+                                <span class="prompt-path">C:\Users\E-Corps&gt;</span>
+                                <span id="typed-text-placeholder"></span><span id="cursor" style="display:none;">&#9646;</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                        <!-- Contatori -->
+                <div class="counters">
+                    <div class="counter">
+                        <h3>Progetti Completati</h3>
+                        <p id="counter1">0</p>
+                    </div>
+                    <div class="counter">
+                        <h3>Clienti Soddisfatti</h3>
+                        <p id="counter2">0</p>
+                    </div>
+                    <div class="counter">
+                        <h3>Anni di Esperienza</h3>
+                        <p id="counter3">0</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+        
+        <div class="overlay">
+            <nav>
+                <ul>
+                    <li><a href="https://www.e-corps.it/azienda.html">Azienda</a></li>
+                    <li><a href="https://www.e-corps.it/servizi.html">Servizi</a></li>
+                    <li><a href="https://www.e-corps.it/contatti.html">Contatti</a></li>
+                </ul>
+            </nav>
+            <button class="close-button" id="close-button">
+                <div class="arrow-line"></div>
+                <div class="arrow-right"></div>
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="about.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const counters = [
+                { element: document.getElementById("counter1"), endValue: 150 },
+                { element: document.getElementById("counter2"), endValue: 300 },
+                { element: document.getElementById("counter3"), endValue: 10 }
+            ];
+
+            counters.forEach(counter => {
+                let count = 0;
+                const increment = Math.ceil(counter.endValue / 100); // Incremento per ogni tick
+                const updateCounter = () => {
+                    if (count < counter.endValue) {
+                        count += increment;
+                        counter.element.innerText = Math.min(count, counter.endValue); // Limita il valore massimo
+                        requestAnimationFrame(updateCounter);
+                    }
+                };
+                updateCounter();
+            });
+        });
+    </script>
+
+
+</body>
+</html>
