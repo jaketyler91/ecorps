@@ -2,9 +2,9 @@
 body, html {
     margin: 0;
     padding: 0;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Montserrat', 'Roboto', 'Arial', sans-serif;
     color: #ccc; /* Grigio chiaro */
-    height: 100%;
+    min-height: 100%;
     overflow-x: hidden;
 }
 
@@ -31,7 +31,7 @@ body, html {
     z-index: 1;
     text-align: center;
     width: 100%;
-    height: 100%;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -325,16 +325,17 @@ textarea {
 /* Footer Styling */
 footer {
     width: 100%;
-    padding: 100px 0;
+    padding: 60px 0 30px;
     box-sizing: border-box;
-    background: transparent; /* Sfondo trasparente per mantenere l'animazione */
-    color: #ccc; /* Colore testo */
-    font-family: 'Arial', sans-serif; /* Font famiglia */
-    font-size: 0.9em; /* Riduce la dimensione del carattere */
-    margin-top: -150px; /* Aumenta il margine superiore per spostare il footer verso l'alto */
-    opacity: 0; /* Inizialmente nascosto */
-    transform: translateY(50px); /* Spostato verso il basso */
-    transition: opacity 0.5s ease, transform 0.5s ease; /* Transizione fluida */
+    background: rgba(10, 10, 10, 0.85);
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    color: #ccc;
+    font-family: 'Montserrat', 'Arial', sans-serif;
+    font-size: 0.9em;
+    margin-top: 60px;
+    opacity: 1;
+    transform: none;
+    transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
 footer.visible {
@@ -544,8 +545,8 @@ footer.visible {
 
 /* Effetto di transizione per i servizi */
 .service {
-    opacity: 0;
-    transition: opacity 0.6s ease;
+    opacity: 1;
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .service.visible {
@@ -802,4 +803,413 @@ body.page-privacy .privacy-policy {
 
 body.page-privacy #privacy-policy {
     margin-top: 4%; /* Aggiunge uno spazio di 50px tra l'header e la privacy policy */
+}
+
+
+/* ===================================================
+   NUOVI STILI AGGIUNTIVI PER ARRICCHIRE IL SITO
+   =================================================== */
+
+/* Miglioramento Hero e Bottoni */
+.hero-section {
+    max-width: 950px;
+    margin: 20px auto 40px;
+    padding: 20px;
+    text-align: center;
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    text-shadow: 0 0 20px rgba(0, 119, 255, 0.3);
+}
+
+.hero-subtitle {
+    font-size: 1.25rem;
+    color: #b0b0b0;
+    line-height: 1.6;
+    max-width: 780px;
+    margin: 0 auto 35px;
+}
+
+.hero-actions {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.btn-secondary {
+    display: inline-block;
+    padding: 15px 30px;
+    background: rgba(255, 255, 255, 0.05);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+    border-color: #0077ff;
+    background: rgba(0, 119, 255, 0.15);
+    color: #00d2ff;
+    box-shadow: 0 0 15px rgba(0, 119, 255, 0.3);
+}
+
+/* Griglia Highlights / Badge */
+.highlights-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    width: 100%;
+    margin: 20px auto 60px;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.highlight-card {
+    background: rgba(25, 25, 25, 0.85);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 24px 20px;
+    text-align: left;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(8px);
+}
+
+.highlight-card:hover {
+    border-color: rgba(0, 119, 255, 0.8);
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(0, 119, 255, 0.15);
+}
+
+.highlight-tag {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    color: #00d2ff;
+    background: rgba(0, 210, 255, 0.1);
+    padding: 4px 10px;
+    border-radius: 4px;
+    margin-bottom: 12px;
+}
+
+.highlight-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.15rem;
+    color: #fff;
+    margin: 0 0 8px 0;
+    font-weight: 700;
+}
+
+.highlight-desc {
+    font-size: 0.9rem;
+    color: #a0a0a0;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* Sezioni strutturate */
+.section-wrapper {
+    width: 100%;
+    max-width: 1200px;
+    margin: 70px auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.section-tag {
+    display: inline-block;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #0077ff;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.section-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.3rem;
+    color: #fff;
+    margin: 0 0 15px;
+    font-weight: 700;
+}
+
+.section-subtitle {
+    font-size: 1.05rem;
+    color: #a0a0a0;
+    max-width: 750px;
+    margin: 0 auto 40px;
+    line-height: 1.6;
+}
+
+/* Card Servizi con tag e hover migliorato */
+.service {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.service:hover {
+    border-color: rgba(0, 119, 255, 0.8);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 119, 255, 0.2);
+}
+
+.service-tag {
+    font-size: 0.75rem;
+    color: #00d2ff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.service h2, .service h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-size: 1.35rem;
+}
+
+.service p {
+    color: #b5b5b5;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    font-size: 0.95rem;
+}
+
+/* Metodologia Operativa a 4 Step */
+.methodology-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.step-card {
+    background: rgba(30, 30, 30, 0.85);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 10px;
+    padding: 30px 22px;
+    text-align: left;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.step-card:hover {
+    border-color: #0077ff;
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(0, 119, 255, 0.15);
+}
+
+.step-number {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: rgba(0, 119, 255, 0.35);
+    margin-bottom: 12px;
+    line-height: 1;
+}
+
+.step-card:hover .step-number {
+    color: #00d2ff;
+}
+
+.step-card h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    font-size: 1.2rem;
+    margin: 0 0 10px;
+}
+
+.step-card p {
+    color: #a5a5a5;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* Sezione Perché Sceglierci */
+.why-us-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.why-card {
+    background: rgba(25, 25, 25, 0.85);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 10px;
+    padding: 30px 25px;
+    text-align: left;
+    transition: all 0.3s ease;
+}
+
+.why-card:hover {
+    border-color: rgba(0, 210, 255, 0.6);
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(0, 210, 255, 0.15);
+}
+
+.why-card h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    font-size: 1.25rem;
+    margin: 0 0 12px;
+}
+
+.why-card p {
+    color: #a5a5a5;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Banner Call-To-Action Finale */
+.cta-banner {
+    background: linear-gradient(135deg, rgba(10, 30, 60, 0.92) 0%, rgba(20, 20, 25, 0.95) 100%);
+    border: 1px solid rgba(0, 119, 255, 0.4);
+    border-radius: 12px;
+    padding: 50px 30px;
+    margin: 80px auto 40px;
+    max-width: 1050px;
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
+    text-align: center;
+}
+
+.cta-banner h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.2rem;
+    color: #fff;
+    margin: 0 0 15px;
+}
+
+.cta-banner p {
+    font-size: 1.1rem;
+    color: #ccc;
+    max-width: 680px;
+    margin: 0 auto 30px;
+    line-height: 1.6;
+}
+
+/* Footer Unificato */
+.footer-unified {
+    width: 100%;
+    margin-top: 80px;
+    padding: 60px 20px 30px;
+    background: rgba(10, 10, 10, 0.9);
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    box-sizing: border-box;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto 40px;
+    text-align: left;
+}
+
+.footer-col h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    font-size: 1.15rem;
+    margin: 0 0 15px;
+    letter-spacing: 0.5px;
+}
+
+.footer-col p {
+    color: #a0a0a0;
+    line-height: 1.6;
+    margin: 0 0 10px;
+    font-size: 0.92rem;
+}
+
+.footer-col a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-col a:hover {
+    color: #00d2ff;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-bottom {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 25px;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.85rem;
+    color: #777;
+}
+
+.footer-bottom a {
+    color: #888;
+    text-decoration: none;
+}
+
+.footer-bottom a:hover {
+    color: #00d2ff;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2.1rem;
+    }
+    .hero-subtitle {
+        font-size: 1.05rem;
+    }
+    .section-title {
+        font-size: 1.8rem;
+    }
+    .cta-banner {
+        padding: 35px 20px;
+    }
+    .cta-banner h2 {
+        font-size: 1.7rem;
+    }
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer-grid {
+        text-align: center;
+    }
 }
