@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Servizi di Sicurezza Informatica & Ethical Hacking | E-Corps</title>
+    <title>Servizi Cyber Security, System Integration & DevOps | E-Corps</title>
     <meta name="description" content="Approfondimento tecnico dei servizi di Cyber Security E-Corps: Penetration Testing (External, Internal, Web App, Cloud), Vulnerability Management, Campagne Phishing, Incident Response e Red Teaming." />
     <link rel="canonical" href="https://www.e-corps.it/servizi/" />
     
@@ -25,8 +25,8 @@
     <!-- Open Graph & Social Cards -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.e-corps.it/servizi/">
-    <meta property="og:title" content="Servizi di Sicurezza Informatica & Ethical Hacking | E-Corps">
-    <meta property="og:description" content="Approfondimento tecnico dei servizi di Cyber Security E-Corps: Penetration Testing (External, Internal, Web App, Cloud), Vulnerability Management, Campagne Phishing, Incident Response e Red Teaming.">
+    <meta property="og:title" content="Servizi Cyber Security, System Integration & DevOps | E-Corps">
+    <meta property="og:description" content="Dalla difesa proattiva e penetration testing alla gestione di server, reti, cloud DevOps e migrazione posta aziendale.">
     <meta property="og:image" content="https://www.e-corps.it/logo.png">
     <meta property="og:image:alt" content="E-Corps Cyber Security Logo">
     <meta property="og:site_name" content="E-Corps">
@@ -34,8 +34,8 @@
     
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Servizi di Sicurezza Informatica & Ethical Hacking | E-Corps">
-    <meta name="twitter:description" content="Approfondimento tecnico dei servizi di Cyber Security E-Corps: Penetration Testing (External, Internal, Web App, Cloud), Vulnerability Management, Campagne Phishing, Incident Response e Red Teaming.">
+    <meta name="twitter:title" content="Servizi Cyber Security, System Integration & DevOps | E-Corps">
+    <meta name="twitter:description" content="Dalla difesa proattiva e penetration testing alla gestione di server, reti, cloud DevOps e migrazione posta aziendale.">
     <meta name="twitter:image" content="https://www.e-corps.it/logo.png">
     
     <!-- Dati Strutturati Schema.org JSON-LD -->
@@ -47,13 +47,13 @@
             "@type": "WebPage",
             "@id": "https://www.e-corps.it/servizi/#webpage",
             "url": "https://www.e-corps.it/servizi/",
-            "name": "Servizi di Sicurezza Informatica & Ethical Hacking | E-Corps",
+            "name": "Servizi Cyber Security, System Integration & DevOps | E-Corps",
             "isPartOf": {
                 "@type": "WebSite",
                 "url": "https://www.e-corps.it/",
                 "name": "E-Corps"
             },
-            "description": "Approfondimento tecnico dei servizi di Cyber Security E-Corps: Penetration Testing, Vulnerability Management, Campagne Phishing e Incident Response.",
+            "description": "Catalogo dei servizi E-Corps: Cyber Security avanzata (Pentest, Red Teaming, Incident Response) e soluzioni di System Integration & DevOps (migrazione M365/Google Workspace, server, reti, sviluppo web e backup).",
             "inLanguage": "it-IT"
         },
         {
@@ -91,6 +91,22 @@
                         "@type": "Answer",
                         "text": "Assolutamente sì. I nostri report tecnici ed esecutivi seguono gli standard internazionali (OWASP, NIST, CVSS v3.1) e costituiscono documentazione probatoria valida per dimostrare l'accountability prevista dal GDPR e dai requisiti delle compagnie assicurative per le polizze Cyber Risk."
                     }
+                },
+                {
+                    "@type": "Question",
+                    "name": "La migrazione delle caselle di posta verso M365 o Google Workspace comporta interruzioni del lavoro?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "No. Eseguiamo la sincronizzazione dei dati storici in background senza toccare il flusso di posta corrente. Il cutover finale viene pianificato in finestre non operative (sera o fine settimana) con switch DNS a impatto zero e zero perdita di email."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Fornite sia interventi una tantum di System Integration sia contratti di gestione continuativa (MSP)?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Sì. Lavoriamo sia su progetti mirati (es. migrazione posta, rifacimento rete, sviluppo web app, audit cloud) sia tramite canoni di assistenza gestita continuativa (MSP) con monitoraggio proattivo 24/7, SLA garantiti e gestione delle patch."
+                    }
                 }
             ]
         }
@@ -124,14 +140,32 @@
 
         <main>
             <!-- Hero Servizi -->
-            <section class="hero-section" style="margin-bottom: 30px;">
-                <span class="section-tag">Catalogo Tecnico di Cyber Security</span>
-                <h1>Dettaglio Operativo dei Nostri Servizi</h1>
-                <p class="hero-subtitle">Mentre la nostra home page offre una panoramica d'insieme, in questa pagina trovi la scomposizione metodologica di ogni attività: ambiti d'ingaggio, percorsi di test, deliverable analitici e metriche di remediation.</p>
+            <section class="hero-section" style="margin-bottom: 25px;">
+                <span class="section-tag">Catalogo Completo dei Servizi</span>
+                <h1>Servizi di Sicurezza, System Integration & DevOps</h1>
+                <p class="hero-subtitle">Dalla protezione offensiva e proattiva contro cyber attacchi e vulnerabilità, alla modernizzazione e gestione completa dell'infrastruttura IT aziendale. Scegli la categoria di tuo interesse per visualizzare i dettagli operativi e i deliverable.</p>
             </section>
 
+            <!-- TABS SWITCHER: Cybersecurity vs System Integration & DevOps -->
+            <div class="services-tab-control" role="tablist" aria-label="Selettore categoria servizi">
+                <button type="button" class="services-tab-btn active" id="tab-btn-cyber" role="tab" aria-selected="true" aria-controls="panel-cybersecurity" tabindex="0">
+                    <span class="tab-icon">🛡️</span>
+                    <span class="tab-label">Cybersecurity Services</span>
+                    <span class="tab-badge">6 Ambiti Specializzati</span>
+                </button>
+                <button type="button" class="services-tab-btn" id="tab-btn-sysdev" role="tab" aria-selected="false" aria-controls="panel-system-integration" tabindex="-1">
+                    <span class="tab-icon">⚙️</span>
+                    <span class="tab-label">System Integration & DevOps</span>
+                    <span class="tab-badge">6 Soluzioni Infrastrutturali</span>
+                </button>
+            </div>
+
             <!-- CONTENUTO APPROFONDITO PER OGNI FRAME DI SERVIZIO -->
-            <div class="section-wrapper" style="padding-top: 0;">
+            <!-- ==========================================================================
+                 PANEL 1: CYBERSECURITY SERVICES (DEFAULT)
+                 ========================================================================== -->
+            <div id="panel-cybersecurity" class="services-tab-panel active" role="tabpanel" aria-labelledby="tab-btn-cyber">
+                <div class="section-wrapper" style="padding-top: 0;">
 
                 <!-- FRAME 1: PENETRATION TESTING -->
                 <article class="service-deep-frame" id="penetration-testing">
@@ -487,6 +521,373 @@
                     </div>
                 </div>
             </section>
+            </div>
+
+            <!-- ==========================================================================
+                 PANEL 2: SYSTEM INTEGRATION & DEVOPS
+                 ========================================================================== -->
+            <div id="panel-system-integration" class="services-tab-panel" role="tabpanel" aria-labelledby="tab-btn-sysdev">
+                
+                <div class="section-wrapper" style="padding-top: 0;">
+
+                    <!-- FRAME 1: MIGRAZIONE EMAIL & CLOUD COLLABORATION -->
+                    <article class="service-deep-frame" id="migrazione-email-cloud">
+                        <div class="service-deep-header">
+                            <h2><span>✉️</span> Migrazione Email & Cloud Collaboration (M365 & Google Workspace)</h2>
+                            <span class="service-deep-badge">Cloud Migration & Productivity</span>
+                        </div>
+                        <p class="service-deep-intro">
+                            Guidiamo la tua azienda nella transizione sicura e fluida verso le moderne piattaforme di produttività cloud (Microsoft 365 e Google Workspace), abbandonando server di posta legacy (IMAP/POP3, Microsoft Exchange on-premise, Zimbra) senza interruzioni di servizio né rischio di perdita dati.
+                        </p>
+                        
+                        <div class="sub-services-grid">
+                            <div class="sub-service-card">
+                                <h3>📦 Migrazione Zero Downtime & Zero Data Loss</h3>
+                                <p>Sincronizzazione preliminare trasparente di caselle email, cartelle, archivi storici, calendari condivisi, contatti e regole, garantendo la continuità lavorativa durante l'intero processo.</p>
+                            </div>
+                            
+                            <div class="sub-service-card">
+                                <h3>🛡️ Hardening Email (SPF, DKIM, DMARC)</h3>
+                                <p>Configurazione e allineamento rigoroso dei record crittografici DNS per azzerare lo spoofing del vostro dominio, contrastare attacchi BEC (Business Email Compromise) e massimizzare la deliverability.</p>
+                            </div>
+
+                            <div class="sub-service-card">
+                                <h3>📁 File Server Cloud: SharePoint & Google Drive</h3>
+                                <p>Riorganizzazione delle cartelle di rete aziendali nel cloud, con migrazione dei dati, impostazione dei permessi di accesso granulari, cronologia versioni e criteri di protezione dei documenti.</p>
+                            </div>
+
+                            <div class="sub-service-card">
+                                <h3>👥 Cutover Pianificato & Supporto Utenti</h3>
+                                <p>Esecuzione del passaggio definitivo in finestre concordate (notturne o festivi), configurazione assistita di client Outlook, webmail e smartphone, con guida rapida all'uso per i dipendenti.</p>
+                            </div>
+                        </div>
+
+                        <div class="service-deliverables-box">
+                            <div class="service-deliverables-title">Deliverable & Risultati Forniti:</div>
+                            <div class="deliverables-tags">
+                                <span class="deliverable-tag">Audit preliminare volumi caselle e mappatura archivio</span>
+                                <span class="deliverable-tag">Configurazione rigorosa DNS, MX, SPF, DKIM e DMARC</span>
+                                <span class="deliverable-tag">MFA (Autenticazione a due fattori) attiva su tutti gli account</span>
+                                <span class="deliverable-tag">Assistenza operativa e supporto post-migrazione dedicato</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- FRAME 2: GESTIONE RETI AZIENDALI & FIREWALL -->
+                    <article class="service-deep-frame" id="networking-firewall">
+                        <div class="service-deep-header">
+                            <h2><span>🌐</span> Gestione Reti Aziendali, Firewall & Networking Avanzato</h2>
+                            <span class="service-deep-badge">Network & Perimeter Security</span>
+                        </div>
+                        <p class="service-deep-intro">
+                            Progettiamo, implementiamo e manuteniamo l'intera infrastruttura di rete aziendale (LAN, WAN, SD-WAN e Wi-Fi Enterprise) combinando stabilità operativa, massima velocità di trasmissione e isolamento rigoroso del traffico critico.
+                        </p>
+                        
+                        <div class="sub-services-grid">
+                            <div class="sub-service-card">
+                                <h3>🔒 Firewall UTM Next-Gen & Filtraggio Avanzato</h3>
+                                <p>Fornitura, deployment e gestione centralizzata di appliance firewall (Fortinet FortiGate, pfSense, OPNsense, Cisco) con moduli IPS/IDS, ispezione SSL, antivirus di rete e Web Application Control.</p>
+                            </div>
+                            
+                            <div class="sub-service-card">
+                                <h3>🔀 Segmentazione Logica (VLAN & Zero Trust)</h3>
+                                <p>Separazione rigorosa del traffico di rete tra dipartimenti aziendali, server di produzione, postazioni dipendenti, dispositivi IoT/OT, stampanti e rete Wi-Fi Guest per bloccare movimenti laterali.</p>
+                            </div>
+
+                            <div class="sub-service-card">
+                                <h3>🔑 VPN Cifrate Site-to-Site & Smart Working</h3>
+                                <p>Interconnessione sicura tra sedi distaccate tramite tunnel IPsec crittografati ad alta velocità, e canali VPN client-to-site con autenticazione multifattore (MFA) per i collaboratori remoti.</p>
+                            </div>
+
+                            <div class="sub-service-card">
+                                <h3>📶 Wi-Fi Enterprise & Switching Gestito L2/L3</h3>
+                                <p>Copertura wireless professionale con autenticazione 802.1X WPA3-Enterprise, roaming seamless tra access point e configurazione di switch gestiti con link aggregation, QoS e ridondanza STP.</p>
+                            </div>
+                        </div>
+
+                        <div class="service-deliverables-box">
+                            <div class="service-deliverables-title">Deliverable & Risultati Forniti:</div>
+                            <div class="deliverables-tags">
+                                <span class="deliverable-tag">Mappa topologica e schema di indirizzamento IP/VLAN</span>
+                                <span class="deliverable-tag">Policy di sicurezza perimetrale e regole firewall formalizzate</span>
+                                <span class="deliverable-tag">Backup automatico schedulato delle configurazioni di rete</span>
+                                <span class="deliverable-tag">Collaudo di throughput, failover multi-WAN e sicurezza Wi-Fi</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- FRAME 3: GESTIONE SERVER & VIRTUALIZZAZIONE -->
+                    <article class="service-deep-frame" id="server-virtualizzazione">
+                        <div class="service-deep-header">
+                            <h2><span>🖥️</span> Gestione Server, Sistemi & Virtualizzazione Enterprise</h2>
+                            <span class="service-deep-badge">Systems Administration & Virtualization</span>
+                        </div>
+                        <p class="service-deep-intro">
+                            Amministrazione sistemistica proattiva e continuativa per ambienti fisici, virtuali e ibridi. Manteniamo i tuoi server operativi, protetti, monitorati costantemente e ottimizzati per garantire elevate prestazioni applicative.
+                        </p>
+                        
+                        <div class="sub-services-grid">
+                            <div class="sub-service-card">
+                                <h3>🐧 Server Linux & Microsoft Windows Server</h3>
+                                <p>Installazione, indurimento (OS Hardening), tuning delle prestazioni e manutenzione ordinaria/straordinaria su distribuzioni Linux (Ubuntu, Debian, RHEL, Rocky) e ambienti Windows Server (2016-2025).</p>
+                            </div>
+                            
+                            <div class="sub-service-card">
+                                <h3>👥 Active Directory, Entra ID & Identity Management</h3>
+                                <p>Progettazione e amministrazione di domini Active Directory, Microsoft Entra ID (Azure AD), criteri di sicurezza di gruppo (GPO), Single Sign-On (SSO) e gestione del ciclo di vita delle identità aziendali.</p>
+                            </div>
+
+                            <div class="sub-service-card">
+                                <h3>🖲️ Virtualizzazione & Cluster HA (Proxmox, VMware, Hyper-V)</h3>
+                                <p>Realizzazione e consolidamento di cluster di virtualizzazione ad alta disponibilità (High Availability) con Proxmox VE, VMware vSphere o Hyper-V, inclusi storage condiviso SAN/NAS e live migration.</p>
+                            </div>
+
+                            <div class="sub-service-card">
+                                <h3>📈 Telemetria, Monitoraggio H24 & Alerting</h3>
+                                <p>Controllo proattivo dello stato dei server con agenti di telemetria (Zabbix, Prometheus, Grafana): monitoraggio in tempo reale di carichi CPU, RAM, dischi, servizi e riavvio automatico delle dipendenze.</p>
+                            </div>
+                        </div>
+
+                        <div class="service-deliverables-box">
+                            <div class="service-deliverables-title">Deliverable & Risultati Forniti:</div>
+                            <div class="deliverables-tags">
+                                <span class="deliverable-tag">Checklist di hardening del sistema operativo secondo benchmark CIS</span>
+                                <span class="deliverable-tag">Matrice ruoli, permessi e policy di accesso Active Directory</span>
+                                <span class="deliverable-tag">Dashboard di monitoraggio con soglie di allarme e canali d'emergenza</span>
+                                <span class="deliverable-tag">Report mensile di uptime, stato degli aggiornamenti e allocazione risorse</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- FRAME 4: SVILUPPO APPLICAZIONI WEB & SOFTWARE CUSTOM -->
+                    <article class="service-deep-frame" id="sviluppo-web-applicativi">
+                        <div class="service-deep-header">
+                            <h2><span>💻</span> Sviluppo Applicazioni Web, Portali & Software Custom</h2>
+                            <span class="service-deep-badge">Custom Software Development</span>
+                        </div>
+                        <p class="service-deep-intro">
+                            Sviluppiamo soluzioni software web su misura, portali B2B per clienti e fornitori e dashboard gestionali personalizzate, progettate con standard rigorosi di sicurezza applicativa fin dalla prima riga di codice (Security-by-Design).
+                        </p>
+                        
+                        <div class="sub-services-grid">
+                            <div class="sub-service-card">
+                                <h3>🌐 Web Application & Portali Aziendali B2B</h3>
+                                <p>Piattaforme web moderne, responsive e scalabili (React, Next.js, Node.js, Python/Django/FastAPI) studiate per ottimizzare i flussi interni e offrire interfacce intuitive al personale e ai clienti.</p>
+                            </div>
+                            
+                            <div class="sub-service-card">
+                                <h3>🔌 Integrazione API, ERP & Gestionali di Settore</h3>
+                                <p>Connessione bidirezionale e sincronizzazione in tempo reale tra software gestionali (SAP, TeamSystem, Zucchetti, custom), banche dati, CRM e canali di ecommerce tramite API RESTful e Webhook sicuri.</p>
+                            </div>
+
+                            <div class="sub-service-card">
+                                <h3>🛡️ Architettura Sicura OWASP & Protezione Dati</h3>
+                                <p>Applicazione nativa dei principi OWASP Top 10: protezione da SQL injection, XSS, CSRF, gestione sicura delle sessioni, crittografia avanzata dei dati a riposo e in transito, e audit log integrati.</p>
+                            </div>
+
+                            <div class="sub-service-card">
+                                <h3>⚡ Modernizzazione Software Legacy & Refactoring</h3>
+                                <p>Audit di codice, efficientamento e migrazione di vecchi applicativi obsoleti o rallentati verso architetture moderne a microservizi o container, riducendo il debito tecnico e i costi di manutenzione.</p>
+                            </div>
+                        </div>
+
+                        <div class="service-deliverables-box">
+                            <div class="service-deliverables-title">Deliverable & Risultati Forniti:</div>
+                            <div class="deliverables-tags">
+                                <span class="deliverable-tag">Repository Git con codice sorgente completamente commentato e di proprietà del cliente</span>
+                                <span class="deliverable-tag">Documentazione tecnica OpenAPI / Swagger per tutte le integrazioni API</span>
+                                <span class="deliverable-tag">Collaudo applicativo, test di usabilità, carico e security assessment</span>
+                                <span class="deliverable-tag">Garanzia post-rilascio e piano di evoluzione continuativa</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- FRAME 5: CLOUD DEVOPS & AUTOMAZIONE -->
+                    <article class="service-deep-frame" id="cloud-devops">
+                        <div class="service-deep-header">
+                            <h2><span>☁️</span> Cloud Engineering, DevOps & Containerizzazione</h2>
+                            <span class="service-deep-badge">Cloud Architecture & DevOps</span>
+                        </div>
+                        <p class="service-deep-intro">
+                            Acceleriamo il rilascio del software e garantiamo la massima resilienza infrastrutturale integrando pratiche DevOps, automazione CI/CD e architetture cloud scalabili su AWS, Google Cloud e Microsoft Azure.
+                        </p>
+                        
+                        <div class="sub-services-grid">
+                            <div class="sub-service-card">
+                                <h3>☁️ Architetture Cloud Pubbliche & Ibride</h3>
+                                <p>Progettazione, migrazione e dimensionamento di infrastrutture su AWS, Azure o Google Cloud con strategie multi-region, bilanciamento del carico e continuo controllo dei costi (FinOps).</p>
+                            </div>
+                            
+                            <div class="sub-service-card">
+                                <h3>🐳 Docker & Orchestrazione Kubernetes</h3>
+                                <p>Impacchettamento degli applicativi in container leggeri e standardizzati, con deploy e orchestrazione scalabile tramite cluster Kubernetes per azzerare le incompatibilità tra ambienti.</p>
+                            </div>
+
+                            <div class="sub-service-card">
+                                <h3>🚀 Pipeline CI/CD (Continuous Integration & Delivery)</h3>
+                                <p>Creazione di workflow automatici (GitHub Actions, GitLab CI) per compilazione, linting, esecuzione automatica dei test, controlli SAST di sicurezza e deployment in produzione a zero tempi morti.</p>
+                            </div>
+
+                            <div class="sub-service-card">
+                                <h3>📜 Infrastructure as Code (IaC) con Terraform & Ansible</h3>
+                                <p>Scrittura e versionamento dell'intera infrastruttura come codice: provisioning automatizzato, ripetibile e documentato di server, reti, database e certificati SSL in pochi minuti.</p>
+                            </div>
+                        </div>
+
+                        <div class="service-deliverables-box">
+                            <div class="service-deliverables-title">Deliverable & Risultati Forniti:</div>
+                            <div class="deliverables-tags">
+                                <span class="deliverable-tag">Repository IaC (Terraform/Ansible) per il deploy automatizzato</span>
+                                <span class="deliverable-tag">Pipeline CI/CD configurata con security gate e notifiche istantanee</span>
+                                <span class="deliverable-tag">Diagramma architetturale cloud e report di audit costi FinOps</span>
+                                <span class="deliverable-tag">Policy di autoscaling e manuali operativi di gestione infrastruttura</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- FRAME 6: DISASTER RECOVERY & BACKUP STRATEGICO -->
+                    <article class="service-deep-frame" id="disaster-recovery-backup">
+                        <div class="service-deep-header">
+                            <h2><span>💾</span> Disaster Recovery, Backup Strategico & Business Continuity</h2>
+                            <span class="service-deep-badge">Business Continuity & Resilience</span>
+                        </div>
+                        <p class="service-deep-intro">
+                            Proteggiamo il cuore del business aziendale da qualsiasi scenario avverso: attacchi ransomware con cifratura malevola, guasti hardware critici, disastri naturali o incidenti operativi, garantendo il ripristino certo dei dati in tempi certi.
+                        </p>
+                        
+                        <div class="sub-services-grid">
+                            <div class="sub-service-card">
+                                <h3>🛡️ Regola Backup 3-2-1-1-0 & Storage Immutabile</h3>
+                                <p>Implementazione dello standard aureo di sicurezza: 3 copie, 2 supporti differenti, 1 offsite, 1 immutabile (WORM / Object Lock a prova di ransomware e cancellazione accidentale) e 0 errori di restore.</p>
+                            </div>
+                            
+                            <div class="sub-service-card">
+                                <h3>⏱️ Progettazione RPO & RTO su Misura</h3>
+                                <p>Definizione congiunta dei tempi massimi accettabili di perdita dati (Recovery Point Objective) e di riavvio delle attività (Recovery Time Objective) in conformità agli obiettivi di business e compliance.</p>
+                            </div>
+
+                            <div class="sub-service-card">
+                                <h3>🔄 Disaster Recovery As A Service (DRaaS) & Replica</h3>
+                                <p>Replica continua delle macchine virtuali su datacenter secondario o cloud geograficamente isolato, pronto ad accendersi automaticamente (failover) in caso di blocco della sede principale.</p>
+                            </div>
+
+                            <div class="sub-service-card">
+                                <h3>🧪 Test Periodici di Ripristino Operativo</h3>
+                                <p>Esecuzione periodica di simulazioni pratiche di ripristino bare-metal e database a caldo, con verifica documentata della coerenza dei dati e rilascio del verbale ufficiale di collaudo.</p>
+                            </div>
+                        </div>
+
+                        <div class="service-deliverables-box">
+                            <div class="service-deliverables-title">Deliverable & Risultati Forniti:</div>
+                            <div class="deliverables-tags">
+                                <span class="deliverable-tag">Piano formale di Disaster Recovery e Continuità Operativa (DRP)</span>
+                                <span class="deliverable-tag">Storage cloud immutabile con cifratura AES-256 e retention policy</span>
+                                <span class="deliverable-tag">Verbale tecnico e reportistica delle simulazioni periodiche di restore</span>
+                                <span class="deliverable-tag">Documento di rispondenza ai requisiti GDPR (Art. 32) e polizze cyber</span>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+
+                <!-- TABELLA DI COMPARAZIONE SYSTEM INTEGRATION & DEVOPS -->
+                <section class="section-wrapper" style="padding-top: 10px;">
+                    <span class="section-tag">Guida alle Soluzioni IT</span>
+                    <h2 class="section-title">Quale Soluzione di System Integration Risponde alla Tua Esigenza?</h2>
+                    <p class="section-subtitle">Una panoramica schematica per individuare l'intervento tecnologico prioritario per la tua infrastruttura.</p>
+                    
+                    <div class="table-scroll-hint">
+                        <span>👉 Scorri orizzontalmente per confrontare tutte le colonne</span>
+                    </div>
+                    <div class="comparison-container">
+                        <table class="comparison-table">
+                            <thead>
+                                <tr>
+                                    <th>Necessità Aziendale</th>
+                                    <th>Servizio Consigliato</th>
+                                    <th>Tecnologie Chiave</th>
+                                    <th>Formula Operativa</th>
+                                    <th>Vantaggio Principale</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Modernizzare la posta ed eliminare vecchi server locali</strong></td>
+                                    <td>Migrazione Email & Cloud Collaboration</td>
+                                    <td>Microsoft 365, Google Workspace, DMARC, Exchange</td>
+                                    <td>Progetto a fasi + supporto</td>
+                                    <td>Zero downtime, zero email perse, sicurezza antifrode</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Isolare la rete, proteggere sedi e abilitare smart working</strong></td>
+                                    <td>Gestione Reti & Firewall Avanzato</td>
+                                    <td>Fortinet, pfSense, Cisco, VLAN, IPsec VPN</td>
+                                    <td>Progetto + monitoraggio continuo</td>
+                                    <td>Segmentazione minacce e connessioni cifrate sicure</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Mantenere server fisici/virtuali efficienti e stabili</strong></td>
+                                    <td>Gestione Server & Virtualizzazione HA</td>
+                                    <td>Linux, Windows Server, Proxmox, VMware, Active Directory</td>
+                                    <td>Canone MSP continuativo</td>
+                                    <td>Aggiornamenti continui, telemetria 24/7 e presidio sistemistico</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Automatizzare processi o creare portali per clienti/fornitori</strong></td>
+                                    <td>Sviluppo Web App & Integrazione ERP</td>
+                                    <td>React, Node.js, Python, REST/GraphQL, ERP Connector</td>
+                                    <td>Sviluppo su misura a sprint</td>
+                                    <td>Processi digitalizzati, codice proprietario e sicuro</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Scalare l'infrastruttura e automatizzare i rilasci software</strong></td>
+                                    <td>Cloud Engineering & Pipeline DevOps</td>
+                                    <td>AWS, Azure, Docker, Kubernetes, Terraform, CI/CD</td>
+                                    <td>Architettura + supporto DevOps</td>
+                                    <td>Deployment automatizzati, azzeramento errori e costi ottimizzati</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Neutralizzare il rischio ransomware e perdita dati</strong></td>
+                                    <td>Disaster Recovery & Backup Immutabile</td>
+                                    <td>Regola 3-2-1-1-0, Object Lock WORM, Replica Cloud, Veeam</td>
+                                    <td>Strategia continuativa + test periodici</td>
+                                    <td>Ripristino garantito al 100% con RPO e RTO certificati</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <!-- FAQ SYSTEM INTEGRATION & DEVOPS -->
+                <section class="section-wrapper" style="padding-top: 10px;">
+                    <span class="section-tag">Chiarezza Operativa</span>
+                    <h2 class="section-title">Domande Frequenti su System Integration & DevOps</h2>
+                    <p class="section-subtitle">Risposte chiare sui tempi, sulle modalità operative e sull'impatto aziendale dei nostri interventi sistemistici.</p>
+                    
+                    <div class="faq-grid">
+                        <div class="faq-card">
+                            <h3>La migrazione delle caselle email comporterà un blocco del lavoro?</h3>
+                            <p>No. Eseguiamo una sincronizzazione massiva preliminare delle caselle storiche in background mentre gli utenti continuano a lavorare regolarmente. Il passaggio finale dei puntamenti DNS (cutover) viene programmato in fasce non lavorative (sera o weekend) con switch immediato e zero disservizi.</p>
+                        </div>
+
+                        <div class="faq-card">
+                            <h3>Potete prendere in carico la gestione di reti e server già installati da altri fornitori?</h3>
+                            <p>Certamente. Avviamo ogni nuova collaborazione con un audit preliminare (assessment sistemistico e di rete) per mappare l'infrastruttura esistente, individuare colli di bottiglia o vulnerabilità trascurate e redigere la documentazione tecnica prima di assumerne il presidio operativo.</p>
+                        </div>
+
+                        <div class="faq-card">
+                            <h3>Quali formule contrattuali offrite per l'assistenza e il supporto sistemistico?</h3>
+                            <p>Proponiamo formule flessibili a seconda delle esigenze aziendali: interventi mirati a progetto (es. migrazione cloud, ristrutturazione rete, sviluppo portali) oppure contratti di assistenza continuativa (Managed Service Provider - MSP) con SLA di presa in carico garantiti e monitoraggio proattivo H24.</p>
+                        </div>
+
+                        <div class="faq-card">
+                            <h3>Il software e le web application che sviluppate rimangono di proprietà del cliente?</h3>
+                            <p>Assolutamente sì. Tutto il codice sorgente, le configurazioni, i database e la documentazione tecnica sviluppati su misura vengono rilasciati al cliente senza vincoli di lock-in o royalties ricorrenti.</p>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
 
             <!-- Banner CTA -->
             <section class="cta-banner" style="margin-top: 50px;">
@@ -549,5 +950,83 @@
     </div>
 
     <script src="https://www.e-corps.it/script.js"></script>
+
+    <!-- Script di gestione Tab Switcher Servizi -->
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const tabBtns = document.querySelectorAll('.services-tab-btn');
+        const tabPanels = document.querySelectorAll('.services-tab-panel');
+
+        function activateTab(tabId, updateHash) {
+            tabBtns.forEach(function(btn) {
+                const isActive = btn.getAttribute('aria-controls') === tabId;
+                btn.classList.toggle('active', isActive);
+                btn.setAttribute('aria-selected', isActive ? 'true' : 'false');
+                btn.setAttribute('tabindex', isActive ? '0' : '-1');
+            });
+
+            tabPanels.forEach(function(panel) {
+                const isActive = panel.id === tabId;
+                panel.classList.toggle('active', isActive);
+            });
+
+            if (updateHash && window.history && window.history.replaceState) {
+                const hashValue = (tabId === 'panel-cybersecurity') ? 'cybersecurity' : 'system-integration';
+                window.history.replaceState(null, '', '#' + hashValue);
+            }
+        }
+
+        tabBtns.forEach(function(btn) {
+            btn.addEventListener('click', function() {
+                const targetId = this.getAttribute('aria-controls');
+                activateTab(targetId, true);
+            });
+
+            // Navigazione accessibile da tastiera
+            btn.addEventListener('keydown', function(e) {
+                const btnArray = Array.from(tabBtns);
+                const currentIndex = btnArray.indexOf(this);
+                let nextIndex = null;
+
+                if (e.key === 'ArrowRight' || e.key === 'ArrowDown') {
+                    nextIndex = (currentIndex + 1) % btnArray.length;
+                } else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') {
+                    nextIndex = (currentIndex - 1 + btnArray.length) % btnArray.length;
+                } else if (e.key === 'Home') {
+                    nextIndex = 0;
+                } else if (e.key === 'End') {
+                    nextIndex = btnArray.length - 1;
+                }
+
+                if (nextIndex !== null) {
+                    e.preventDefault();
+                    btnArray[nextIndex].focus();
+                    activateTab(btnArray[nextIndex].getAttribute('aria-controls'), true);
+                }
+            });
+        });
+
+        // Gestione automatica dell'ancora hash all'apertura della pagina
+        const hash = window.location.hash.toLowerCase();
+        const sysIntegrationAnchors = [
+            '#system-integration', '#devops', '#sysdev', '#sistemi',
+            '#migrazione-email-cloud', '#networking-firewall', '#server-virtualizzazione',
+            '#sviluppo-web-applicativi', '#cloud-devops', '#disaster-recovery-backup'
+        ];
+
+        if (sysIntegrationAnchors.includes(hash)) {
+            activateTab('panel-system-integration', false);
+            if (hash !== '#system-integration' && hash !== '#devops' && hash !== '#sysdev' && hash !== '#sistemi') {
+                const targetElement = document.querySelector(hash);
+                if (targetElement) {
+                    setTimeout(function() {
+                        targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }, 100);
+                }
+            }
+        }
+    });
+    </script>
+
 </body>
 </html>
