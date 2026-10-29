@@ -370,6 +370,7 @@ p {
 .section-wrapper {
     width: 100%;
     max-width: 1200px;
+    min-width: 0;
     margin: 70px auto;
     padding: 0 20px;
     box-sizing: border-box;
@@ -879,6 +880,10 @@ p {
     backdrop-filter: blur(8px);
     text-align: left;
     box-sizing: border-box;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    overflow-wrap: break-word;
     transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -1029,11 +1034,14 @@ p {
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.1);
     width: 100%;
+    max-width: 100%;
+    min-width: 0;
     box-sizing: border-box;
 }
 
 .comparison-table {
     width: 100%;
+    min-width: 680px;
     border-collapse: collapse;
     text-align: left;
     font-size: 0.92rem;
@@ -1702,6 +1710,8 @@ body.page-privacy .privacy-policy {
     .service-deep-header h2 {
         font-size: 1.4rem;
         line-height: 1.3;
+        flex-wrap: wrap;
+        word-break: break-word;
     }
 
     .service-deep-badge {
@@ -1927,6 +1937,19 @@ body.page-privacy .privacy-policy {
     .section-title {
         font-size: 1.45rem;
     }
+
+    .service-deep-frame {
+        padding: 20px 14px;
+    }
+
+    .service-deep-header h2 {
+        font-size: 1.22rem;
+    }
+
+    .services-tab-btn {
+        padding: 10px 12px;
+        font-size: 0.85rem;
+    }
 }
 
 
@@ -2008,11 +2031,19 @@ body.page-privacy .privacy-policy {
 .services-tab-panel {
     display: none;
     opacity: 0;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
     transition: opacity 0.3s ease;
 }
 
 .services-tab-panel.active {
     display: block;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
     opacity: 1;
     animation: tabFadeIn 0.35s ease-out forwards;
 }
